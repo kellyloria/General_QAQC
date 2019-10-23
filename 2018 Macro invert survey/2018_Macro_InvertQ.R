@@ -35,3 +35,4 @@ MI_long_exp <- subset(MI_long, select=c(LTER_site, local_site, location, project
                                         shore, date, taxa, count))
 summary(MI_long_exp)
 
+write.csv(MI_long_exp, "MacroInvertAbundance_2018Q.csv")
