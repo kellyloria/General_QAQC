@@ -1,0 +1,961 @@
+LTER_site,local_site,location,project_site,date,taxa,count
+NWT,GL1,LAKE,GL1_1E,2018-06-28,Trichoptera apataniidae apatania,3
+NWT,GL1,LAKE,GL1_2E,2018-06-28,Trichoptera apataniidae apatania,1
+NWT,GL1,LAKE,GL1_3E,2018-06-28,Trichoptera apataniidae apatania,1
+NWT,GL1,LAKE,GL1_4E,2018-06-28,Trichoptera apataniidae apatania,7
+NWT,GL1,LAKE,GL1_5W,2018-06-28,Trichoptera apataniidae apatania,2
+NWT,GL1,LAKE,GL1_6W,2018-06-28,Trichoptera apataniidae apatania,4
+NWT,GL1,LAKE,GL1_7W,2018-06-28,Trichoptera apataniidae apatania,1
+NWT,GL4,LAKE,GL4_1E,2018-07-03,Trichoptera apataniidae apatania,4
+NWT,GL4,LAKE,GL4_2E,2018-07-03,Trichoptera apataniidae apatania,0
+NWT,GL4,INLET,GL4_3IN,2018-07-03,Trichoptera apataniidae apatania,1
+NWT,GL4,LAKE,GL4_4W,2018-07-03,Trichoptera apataniidae apatania,3
+NWT,GL4,LAKE,GL4_5W,2018-07-03,Trichoptera apataniidae apatania,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-03,Trichoptera apataniidae apatania,0
+NWT,ALB,LAKE,ALB_1W,2018-07-05,Trichoptera apataniidae apatania,0
+NWT,ALB,LAKE,ALB_2W,2018-07-05,Trichoptera apataniidae apatania,0
+NWT,ALB,LAKE,ALB_3E,2018-07-05,Trichoptera apataniidae apatania,0
+NWT,ALB,LAKE,ALB_4E,2018-07-05,Trichoptera apataniidae apatania,0
+NWT,ALB,INLET,ALB_5IN,2018-07-05,Trichoptera apataniidae apatania,0
+NWT,GL1,LAKE,GL1_2E,2018-07-12,Trichoptera apataniidae apatania,0
+NWT,GL1,LAKE,GL1_3E,2018-07-12,Trichoptera apataniidae apatania,1
+NWT,GL1,LAKE,GL1_5W,2018-07-12,Trichoptera apataniidae apatania,0
+NWT,GL1,LAKE,GL1_7W,2018-07-12,Trichoptera apataniidae apatania,2
+NWT,GL4,LAKE,GL4_1E,2018-07-17,Trichoptera apataniidae apatania,2
+NWT,GL4,LAKE,GL4_2E,2018-07-17,Trichoptera apataniidae apatania,2
+NWT,GL4,INLET,GL4_3IN,2018-07-17,Trichoptera apataniidae apatania,0
+NWT,GL4,LAKE,GL4_4W,2018-07-17,Trichoptera apataniidae apatania,1
+NWT,GL4,LAKE,GL4_5W,2018-07-17,Trichoptera apataniidae apatania,1
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-17,Trichoptera apataniidae apatania,1
+NWT,ALB,LAKE,ALB_1W,2018-07-19,Trichoptera apataniidae apatania,0
+NWT,ALB,LAKE,ALB_2W,2018-07-19,Trichoptera apataniidae apatania,0
+NWT,ALB,LAKE,ALB_3E,2018-07-19,Trichoptera apataniidae apatania,0
+NWT,ALB,LAKE,ALB_4E,2018-07-19,Trichoptera apataniidae apatania,0
+NWT,ALB,INLET,ALB_5IN,2018-07-19,Trichoptera apataniidae apatania,0
+NWT,GL5,LAKE,GL5_1W,2018-07-31,Trichoptera apataniidae apatania,0
+NWT,GL5,LAKE,GL5_2E,2018-07-31,Trichoptera apataniidae apatania,1
+NWT,GL5,INLET,GL5_3IN,2018-07-31,Trichoptera apataniidae apatania,1
+NWT,GL5,OUTLET,GL5_4OUT,2018-07-31,Trichoptera apataniidae apatania,1
+NWT,ALB,LAKE,ALB_1W,2018-08-02,Trichoptera apataniidae apatania,0
+NWT,ALB,LAKE,ALB_2W,2018-08-02,Trichoptera apataniidae apatania,0
+NWT,ALB,LAKE,ALB_3E,2018-08-02,Trichoptera apataniidae apatania,0
+NWT,ALB,LAKE,ALB_4E,2018-08-02,Trichoptera apataniidae apatania,0
+NWT,ALB,INLET,ALB_5IN,2018-08-02,Trichoptera apataniidae apatania,0
+NWT,GL4,LAKE,GL4_1E,2018-08-07,Trichoptera apataniidae apatania,7
+NWT,GL4,LAKE,GL4_2E,2018-08-07,Trichoptera apataniidae apatania,15
+NWT,GL4,INLET,GL4_3IN,2018-08-07,Trichoptera apataniidae apatania,7
+NWT,GL4,LAKE,GL4_4W,2018-08-07,Trichoptera apataniidae apatania,11
+NWT,GL4,LAKE,GL4_5W,2018-08-07,Trichoptera apataniidae apatania,124
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-07,Trichoptera apataniidae apatania,2
+NWT,GL1,LAKE,GL1_2E,2018-08-09,Trichoptera apataniidae apatania,0
+NWT,GL1,LAKE,GL1_3E,2018-08-09,Trichoptera apataniidae apatania,4
+NWT,GL1,LAKE,GL1_5W,2018-08-09,Trichoptera apataniidae apatania,15
+NWT,GL1,LAKE,GL1_7W,2018-08-09,Trichoptera apataniidae apatania,7
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-07,Trichoptera apataniidae apatania,0
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-07,Trichoptera apataniidae apatania,0
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Trichoptera apataniidae apatania,0
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Trichoptera apataniidae apatania,0
+NWT,GL4,LAKE,GL4_1E,2018-08-21,Trichoptera apataniidae apatania,68
+NWT,GL4,INLET,GL4_3IN,2018-08-21,Trichoptera apataniidae apatania,5
+NWT,GL4,LAKE,GL4_5W,2018-08-21,Trichoptera apataniidae apatania,22
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-21,Trichoptera apataniidae apatania,0
+NWT,GL4,LAKE,GL4_2E,2018-08-23,Trichoptera apataniidae apatania,62
+NWT,GL4,LAKE,GL4_4W,2018-08-23,Trichoptera apataniidae apatania,5
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-23,Trichoptera apataniidae apatania,0
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-23,Trichoptera apataniidae apatania,0
+NWT,GL1,LAKE,GL1_1E,2018-06-28,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL1,LAKE,GL1_2E,2018-06-28,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL1,LAKE,GL1_3E,2018-06-28,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL1,LAKE,GL1_4E,2018-06-28,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL1,LAKE,GL1_5W,2018-06-28,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL1,LAKE,GL1_6W,2018-06-28,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL1,LAKE,GL1_7W,2018-06-28,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,LAKE,GL4_1E,2018-07-03,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,LAKE,GL4_2E,2018-07-03,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,INLET,GL4_3IN,2018-07-03,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,LAKE,GL4_4W,2018-07-03,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,LAKE,GL4_5W,2018-07-03,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-03,Trichoptera rhyacophilidae rhyacophila,0
+NWT,ALB,LAKE,ALB_1W,2018-07-05,Trichoptera rhyacophilidae rhyacophila,0
+NWT,ALB,LAKE,ALB_2W,2018-07-05,Trichoptera rhyacophilidae rhyacophila,0
+NWT,ALB,LAKE,ALB_3E,2018-07-05,Trichoptera rhyacophilidae rhyacophila,0
+NWT,ALB,LAKE,ALB_4E,2018-07-05,Trichoptera rhyacophilidae rhyacophila,0
+NWT,ALB,INLET,ALB_5IN,2018-07-05,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL1,LAKE,GL1_2E,2018-07-12,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL1,LAKE,GL1_3E,2018-07-12,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL1,LAKE,GL1_5W,2018-07-12,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL1,LAKE,GL1_7W,2018-07-12,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,LAKE,GL4_1E,2018-07-17,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,LAKE,GL4_2E,2018-07-17,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,INLET,GL4_3IN,2018-07-17,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,LAKE,GL4_4W,2018-07-17,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,LAKE,GL4_5W,2018-07-17,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-17,Trichoptera rhyacophilidae rhyacophila,0
+NWT,ALB,LAKE,ALB_1W,2018-07-19,Trichoptera rhyacophilidae rhyacophila,0
+NWT,ALB,LAKE,ALB_2W,2018-07-19,Trichoptera rhyacophilidae rhyacophila,0
+NWT,ALB,LAKE,ALB_3E,2018-07-19,Trichoptera rhyacophilidae rhyacophila,0
+NWT,ALB,LAKE,ALB_4E,2018-07-19,Trichoptera rhyacophilidae rhyacophila,0
+NWT,ALB,INLET,ALB_5IN,2018-07-19,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL5,LAKE,GL5_1W,2018-07-31,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL5,LAKE,GL5_2E,2018-07-31,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL5,INLET,GL5_3IN,2018-07-31,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL5,OUTLET,GL5_4OUT,2018-07-31,Trichoptera rhyacophilidae rhyacophila,0
+NWT,ALB,LAKE,ALB_1W,2018-08-02,Trichoptera rhyacophilidae rhyacophila,0
+NWT,ALB,LAKE,ALB_2W,2018-08-02,Trichoptera rhyacophilidae rhyacophila,0
+NWT,ALB,LAKE,ALB_3E,2018-08-02,Trichoptera rhyacophilidae rhyacophila,0
+NWT,ALB,LAKE,ALB_4E,2018-08-02,Trichoptera rhyacophilidae rhyacophila,0
+NWT,ALB,INLET,ALB_5IN,2018-08-02,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,LAKE,GL4_1E,2018-08-07,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,LAKE,GL4_2E,2018-08-07,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,INLET,GL4_3IN,2018-08-07,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,LAKE,GL4_4W,2018-08-07,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,LAKE,GL4_5W,2018-08-07,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-07,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL1,LAKE,GL1_2E,2018-08-09,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL1,LAKE,GL1_3E,2018-08-09,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL1,LAKE,GL1_5W,2018-08-09,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL1,LAKE,GL1_7W,2018-08-09,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-07,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-07,Trichoptera rhyacophilidae rhyacophila,1
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Trichoptera rhyacophilidae rhyacophila,7
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Trichoptera rhyacophilidae rhyacophila,8
+NWT,GL4,LAKE,GL4_1E,2018-08-21,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,INLET,GL4_3IN,2018-08-21,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,LAKE,GL4_5W,2018-08-21,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-21,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,LAKE,GL4_2E,2018-08-23,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,LAKE,GL4_4W,2018-08-23,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-23,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-23,Trichoptera rhyacophilidae rhyacophila,0
+NWT,GL1,LAKE,GL1_1E,2018-06-28,Trichoptera glossomatidae,0
+NWT,GL1,LAKE,GL1_2E,2018-06-28,Trichoptera glossomatidae,0
+NWT,GL1,LAKE,GL1_3E,2018-06-28,Trichoptera glossomatidae,0
+NWT,GL1,LAKE,GL1_4E,2018-06-28,Trichoptera glossomatidae,0
+NWT,GL1,LAKE,GL1_5W,2018-06-28,Trichoptera glossomatidae,0
+NWT,GL1,LAKE,GL1_6W,2018-06-28,Trichoptera glossomatidae,0
+NWT,GL1,LAKE,GL1_7W,2018-06-28,Trichoptera glossomatidae,0
+NWT,GL4,LAKE,GL4_1E,2018-07-03,Trichoptera glossomatidae,0
+NWT,GL4,LAKE,GL4_2E,2018-07-03,Trichoptera glossomatidae,0
+NWT,GL4,INLET,GL4_3IN,2018-07-03,Trichoptera glossomatidae,0
+NWT,GL4,LAKE,GL4_4W,2018-07-03,Trichoptera glossomatidae,0
+NWT,GL4,LAKE,GL4_5W,2018-07-03,Trichoptera glossomatidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-03,Trichoptera glossomatidae,0
+NWT,ALB,LAKE,ALB_1W,2018-07-05,Trichoptera glossomatidae,0
+NWT,ALB,LAKE,ALB_2W,2018-07-05,Trichoptera glossomatidae,0
+NWT,ALB,LAKE,ALB_3E,2018-07-05,Trichoptera glossomatidae,0
+NWT,ALB,LAKE,ALB_4E,2018-07-05,Trichoptera glossomatidae,0
+NWT,ALB,INLET,ALB_5IN,2018-07-05,Trichoptera glossomatidae,0
+NWT,GL1,LAKE,GL1_2E,2018-07-12,Trichoptera glossomatidae,0
+NWT,GL1,LAKE,GL1_3E,2018-07-12,Trichoptera glossomatidae,0
+NWT,GL1,LAKE,GL1_5W,2018-07-12,Trichoptera glossomatidae,0
+NWT,GL1,LAKE,GL1_7W,2018-07-12,Trichoptera glossomatidae,0
+NWT,GL4,LAKE,GL4_1E,2018-07-17,Trichoptera glossomatidae,0
+NWT,GL4,LAKE,GL4_2E,2018-07-17,Trichoptera glossomatidae,0
+NWT,GL4,INLET,GL4_3IN,2018-07-17,Trichoptera glossomatidae,0
+NWT,GL4,LAKE,GL4_4W,2018-07-17,Trichoptera glossomatidae,0
+NWT,GL4,LAKE,GL4_5W,2018-07-17,Trichoptera glossomatidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-17,Trichoptera glossomatidae,0
+NWT,ALB,LAKE,ALB_1W,2018-07-19,Trichoptera glossomatidae,0
+NWT,ALB,LAKE,ALB_2W,2018-07-19,Trichoptera glossomatidae,0
+NWT,ALB,LAKE,ALB_3E,2018-07-19,Trichoptera glossomatidae,0
+NWT,ALB,LAKE,ALB_4E,2018-07-19,Trichoptera glossomatidae,0
+NWT,ALB,INLET,ALB_5IN,2018-07-19,Trichoptera glossomatidae,0
+NWT,GL5,LAKE,GL5_1W,2018-07-31,Trichoptera glossomatidae,0
+NWT,GL5,LAKE,GL5_2E,2018-07-31,Trichoptera glossomatidae,0
+NWT,GL5,INLET,GL5_3IN,2018-07-31,Trichoptera glossomatidae,0
+NWT,GL5,OUTLET,GL5_4OUT,2018-07-31,Trichoptera glossomatidae,0
+NWT,ALB,LAKE,ALB_1W,2018-08-02,Trichoptera glossomatidae,0
+NWT,ALB,LAKE,ALB_2W,2018-08-02,Trichoptera glossomatidae,0
+NWT,ALB,LAKE,ALB_3E,2018-08-02,Trichoptera glossomatidae,0
+NWT,ALB,LAKE,ALB_4E,2018-08-02,Trichoptera glossomatidae,0
+NWT,ALB,INLET,ALB_5IN,2018-08-02,Trichoptera glossomatidae,0
+NWT,GL4,LAKE,GL4_1E,2018-08-07,Trichoptera glossomatidae,0
+NWT,GL4,LAKE,GL4_2E,2018-08-07,Trichoptera glossomatidae,0
+NWT,GL4,INLET,GL4_3IN,2018-08-07,Trichoptera glossomatidae,0
+NWT,GL4,LAKE,GL4_4W,2018-08-07,Trichoptera glossomatidae,0
+NWT,GL4,LAKE,GL4_5W,2018-08-07,Trichoptera glossomatidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-07,Trichoptera glossomatidae,0
+NWT,GL1,LAKE,GL1_2E,2018-08-09,Trichoptera glossomatidae,0
+NWT,GL1,LAKE,GL1_3E,2018-08-09,Trichoptera glossomatidae,0
+NWT,GL1,LAKE,GL1_5W,2018-08-09,Trichoptera glossomatidae,0
+NWT,GL1,LAKE,GL1_7W,2018-08-09,Trichoptera glossomatidae,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-07,Trichoptera glossomatidae,3
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-07,Trichoptera glossomatidae,0
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Trichoptera glossomatidae,0
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Trichoptera glossomatidae,0
+NWT,GL4,LAKE,GL4_1E,2018-08-21,Trichoptera glossomatidae,0
+NWT,GL4,INLET,GL4_3IN,2018-08-21,Trichoptera glossomatidae,0
+NWT,GL4,LAKE,GL4_5W,2018-08-21,Trichoptera glossomatidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-21,Trichoptera glossomatidae,0
+NWT,GL4,LAKE,GL4_2E,2018-08-23,Trichoptera glossomatidae,0
+NWT,GL4,LAKE,GL4_4W,2018-08-23,Trichoptera glossomatidae,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-23,Trichoptera glossomatidae,0
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-23,Trichoptera glossomatidae,0
+NWT,GL1,LAKE,GL1_1E,2018-06-28,Trichoptera leptoceridae,0
+NWT,GL1,LAKE,GL1_2E,2018-06-28,Trichoptera leptoceridae,13
+NWT,GL1,LAKE,GL1_3E,2018-06-28,Trichoptera leptoceridae,0
+NWT,GL1,LAKE,GL1_4E,2018-06-28,Trichoptera leptoceridae,0
+NWT,GL1,LAKE,GL1_5W,2018-06-28,Trichoptera leptoceridae,0
+NWT,GL1,LAKE,GL1_6W,2018-06-28,Trichoptera leptoceridae,0
+NWT,GL1,LAKE,GL1_7W,2018-06-28,Trichoptera leptoceridae,1
+NWT,GL4,LAKE,GL4_1E,2018-07-03,Trichoptera leptoceridae,0
+NWT,GL4,LAKE,GL4_2E,2018-07-03,Trichoptera leptoceridae,0
+NWT,GL4,INLET,GL4_3IN,2018-07-03,Trichoptera leptoceridae,0
+NWT,GL4,LAKE,GL4_4W,2018-07-03,Trichoptera leptoceridae,1
+NWT,GL4,LAKE,GL4_5W,2018-07-03,Trichoptera leptoceridae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-03,Trichoptera leptoceridae,0
+NWT,ALB,LAKE,ALB_1W,2018-07-05,Trichoptera leptoceridae,0
+NWT,ALB,LAKE,ALB_2W,2018-07-05,Trichoptera leptoceridae,0
+NWT,ALB,LAKE,ALB_3E,2018-07-05,Trichoptera leptoceridae,0
+NWT,ALB,LAKE,ALB_4E,2018-07-05,Trichoptera leptoceridae,0
+NWT,ALB,INLET,ALB_5IN,2018-07-05,Trichoptera leptoceridae,3
+NWT,GL1,LAKE,GL1_2E,2018-07-12,Trichoptera leptoceridae,1
+NWT,GL1,LAKE,GL1_3E,2018-07-12,Trichoptera leptoceridae,0
+NWT,GL1,LAKE,GL1_5W,2018-07-12,Trichoptera leptoceridae,0
+NWT,GL1,LAKE,GL1_7W,2018-07-12,Trichoptera leptoceridae,1
+NWT,GL4,LAKE,GL4_1E,2018-07-17,Trichoptera leptoceridae,0
+NWT,GL4,LAKE,GL4_2E,2018-07-17,Trichoptera leptoceridae,0
+NWT,GL4,INLET,GL4_3IN,2018-07-17,Trichoptera leptoceridae,0
+NWT,GL4,LAKE,GL4_4W,2018-07-17,Trichoptera leptoceridae,0
+NWT,GL4,LAKE,GL4_5W,2018-07-17,Trichoptera leptoceridae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-17,Trichoptera leptoceridae,0
+NWT,ALB,LAKE,ALB_1W,2018-07-19,Trichoptera leptoceridae,0
+NWT,ALB,LAKE,ALB_2W,2018-07-19,Trichoptera leptoceridae,0
+NWT,ALB,LAKE,ALB_3E,2018-07-19,Trichoptera leptoceridae,0
+NWT,ALB,LAKE,ALB_4E,2018-07-19,Trichoptera leptoceridae,0
+NWT,ALB,INLET,ALB_5IN,2018-07-19,Trichoptera leptoceridae,0
+NWT,GL5,LAKE,GL5_1W,2018-07-31,Trichoptera leptoceridae,0
+NWT,GL5,LAKE,GL5_2E,2018-07-31,Trichoptera leptoceridae,0
+NWT,GL5,INLET,GL5_3IN,2018-07-31,Trichoptera leptoceridae,0
+NWT,GL5,OUTLET,GL5_4OUT,2018-07-31,Trichoptera leptoceridae,0
+NWT,ALB,LAKE,ALB_1W,2018-08-02,Trichoptera leptoceridae,0
+NWT,ALB,LAKE,ALB_2W,2018-08-02,Trichoptera leptoceridae,0
+NWT,ALB,LAKE,ALB_3E,2018-08-02,Trichoptera leptoceridae,0
+NWT,ALB,LAKE,ALB_4E,2018-08-02,Trichoptera leptoceridae,0
+NWT,ALB,INLET,ALB_5IN,2018-08-02,Trichoptera leptoceridae,0
+NWT,GL4,LAKE,GL4_1E,2018-08-07,Trichoptera leptoceridae,0
+NWT,GL4,LAKE,GL4_2E,2018-08-07,Trichoptera leptoceridae,0
+NWT,GL4,INLET,GL4_3IN,2018-08-07,Trichoptera leptoceridae,0
+NWT,GL4,LAKE,GL4_4W,2018-08-07,Trichoptera leptoceridae,0
+NWT,GL4,LAKE,GL4_5W,2018-08-07,Trichoptera leptoceridae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-07,Trichoptera leptoceridae,0
+NWT,GL1,LAKE,GL1_2E,2018-08-09,Trichoptera leptoceridae,0
+NWT,GL1,LAKE,GL1_3E,2018-08-09,Trichoptera leptoceridae,0
+NWT,GL1,LAKE,GL1_5W,2018-08-09,Trichoptera leptoceridae,0
+NWT,GL1,LAKE,GL1_7W,2018-08-09,Trichoptera leptoceridae,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-07,Trichoptera leptoceridae,0
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-07,Trichoptera leptoceridae,0
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Trichoptera leptoceridae,0
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Trichoptera leptoceridae,0
+NWT,GL4,LAKE,GL4_1E,2018-08-21,Trichoptera leptoceridae,0
+NWT,GL4,INLET,GL4_3IN,2018-08-21,Trichoptera leptoceridae,0
+NWT,GL4,LAKE,GL4_5W,2018-08-21,Trichoptera leptoceridae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-21,Trichoptera leptoceridae,0
+NWT,GL4,LAKE,GL4_2E,2018-08-23,Trichoptera leptoceridae,0
+NWT,GL4,LAKE,GL4_4W,2018-08-23,Trichoptera leptoceridae,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-23,Trichoptera leptoceridae,0
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-23,Trichoptera leptoceridae,0
+NWT,GL1,LAKE,GL1_1E,2018-06-28,Diptera chironomidae,4
+NWT,GL1,LAKE,GL1_2E,2018-06-28,Diptera chironomidae,5
+NWT,GL1,LAKE,GL1_3E,2018-06-28,Diptera chironomidae,2
+NWT,GL1,LAKE,GL1_4E,2018-06-28,Diptera chironomidae,0
+NWT,GL1,LAKE,GL1_5W,2018-06-28,Diptera chironomidae,1
+NWT,GL1,LAKE,GL1_6W,2018-06-28,Diptera chironomidae,1
+NWT,GL1,LAKE,GL1_7W,2018-06-28,Diptera chironomidae,7
+NWT,GL4,LAKE,GL4_1E,2018-07-03,Diptera chironomidae,0
+NWT,GL4,LAKE,GL4_2E,2018-07-03,Diptera chironomidae,0
+NWT,GL4,INLET,GL4_3IN,2018-07-03,Diptera chironomidae,3
+NWT,GL4,LAKE,GL4_4W,2018-07-03,Diptera chironomidae,0
+NWT,GL4,LAKE,GL4_5W,2018-07-03,Diptera chironomidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-03,Diptera chironomidae,0
+NWT,ALB,LAKE,ALB_1W,2018-07-05,Diptera chironomidae,1
+NWT,ALB,LAKE,ALB_2W,2018-07-05,Diptera chironomidae,0
+NWT,ALB,LAKE,ALB_3E,2018-07-05,Diptera chironomidae,0
+NWT,ALB,LAKE,ALB_4E,2018-07-05,Diptera chironomidae,0
+NWT,ALB,INLET,ALB_5IN,2018-07-05,Diptera chironomidae,4
+NWT,GL1,LAKE,GL1_2E,2018-07-12,Diptera chironomidae,47
+NWT,GL1,LAKE,GL1_3E,2018-07-12,Diptera chironomidae,21
+NWT,GL1,LAKE,GL1_5W,2018-07-12,Diptera chironomidae,28
+NWT,GL1,LAKE,GL1_7W,2018-07-12,Diptera chironomidae,0
+NWT,GL4,LAKE,GL4_1E,2018-07-17,Diptera chironomidae,1
+NWT,GL4,LAKE,GL4_2E,2018-07-17,Diptera chironomidae,0
+NWT,GL4,INLET,GL4_3IN,2018-07-17,Diptera chironomidae,3
+NWT,GL4,LAKE,GL4_4W,2018-07-17,Diptera chironomidae,0
+NWT,GL4,LAKE,GL4_5W,2018-07-17,Diptera chironomidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-17,Diptera chironomidae,0
+NWT,ALB,LAKE,ALB_1W,2018-07-19,Diptera chironomidae,21
+NWT,ALB,LAKE,ALB_2W,2018-07-19,Diptera chironomidae,10
+NWT,ALB,LAKE,ALB_3E,2018-07-19,Diptera chironomidae,10
+NWT,ALB,LAKE,ALB_4E,2018-07-19,Diptera chironomidae,11
+NWT,ALB,INLET,ALB_5IN,2018-07-19,Diptera chironomidae,34
+NWT,GL5,LAKE,GL5_1W,2018-07-31,Diptera chironomidae,5
+NWT,GL5,LAKE,GL5_2E,2018-07-31,Diptera chironomidae,95
+NWT,GL5,INLET,GL5_3IN,2018-07-31,Diptera chironomidae,242
+NWT,GL5,OUTLET,GL5_4OUT,2018-07-31,Diptera chironomidae,14
+NWT,ALB,LAKE,ALB_1W,2018-08-02,Diptera chironomidae,62
+NWT,ALB,LAKE,ALB_2W,2018-08-02,Diptera chironomidae,97
+NWT,ALB,LAKE,ALB_3E,2018-08-02,Diptera chironomidae,31
+NWT,ALB,LAKE,ALB_4E,2018-08-02,Diptera chironomidae,115
+NWT,ALB,INLET,ALB_5IN,2018-08-02,Diptera chironomidae,251
+NWT,GL4,LAKE,GL4_1E,2018-08-07,Diptera chironomidae,1
+NWT,GL4,LAKE,GL4_2E,2018-08-07,Diptera chironomidae,0
+NWT,GL4,INLET,GL4_3IN,2018-08-07,Diptera chironomidae,81
+NWT,GL4,LAKE,GL4_4W,2018-08-07,Diptera chironomidae,0
+NWT,GL4,LAKE,GL4_5W,2018-08-07,Diptera chironomidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-07,Diptera chironomidae,11
+NWT,GL1,LAKE,GL1_2E,2018-08-09,Diptera chironomidae,60
+NWT,GL1,LAKE,GL1_3E,2018-08-09,Diptera chironomidae,33
+NWT,GL1,LAKE,GL1_5W,2018-08-09,Diptera chironomidae,42
+NWT,GL1,LAKE,GL1_7W,2018-08-09,Diptera chironomidae,62
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-07,Diptera chironomidae,225
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-07,Diptera chironomidae,104
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Diptera chironomidae,273
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Diptera chironomidae,127
+NWT,GL4,LAKE,GL4_1E,2018-08-21,Diptera chironomidae,0
+NWT,GL4,INLET,GL4_3IN,2018-08-21,Diptera chironomidae,41
+NWT,GL4,LAKE,GL4_5W,2018-08-21,Diptera chironomidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-21,Diptera chironomidae,14
+NWT,GL4,LAKE,GL4_2E,2018-08-23,Diptera chironomidae,0
+NWT,GL4,LAKE,GL4_4W,2018-08-23,Diptera chironomidae,3
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-23,Diptera chironomidae,123
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-23,Diptera chironomidae,235
+NWT,GL1,LAKE,GL1_1E,2018-06-28,Diptera simuliidae,0
+NWT,GL1,LAKE,GL1_2E,2018-06-28,Diptera simuliidae,0
+NWT,GL1,LAKE,GL1_3E,2018-06-28,Diptera simuliidae,0
+NWT,GL1,LAKE,GL1_4E,2018-06-28,Diptera simuliidae,0
+NWT,GL1,LAKE,GL1_5W,2018-06-28,Diptera simuliidae,0
+NWT,GL1,LAKE,GL1_6W,2018-06-28,Diptera simuliidae,0
+NWT,GL1,LAKE,GL1_7W,2018-06-28,Diptera simuliidae,0
+NWT,GL4,LAKE,GL4_1E,2018-07-03,Diptera simuliidae,0
+NWT,GL4,LAKE,GL4_2E,2018-07-03,Diptera simuliidae,0
+NWT,GL4,INLET,GL4_3IN,2018-07-03,Diptera simuliidae,0
+NWT,GL4,LAKE,GL4_4W,2018-07-03,Diptera simuliidae,0
+NWT,GL4,LAKE,GL4_5W,2018-07-03,Diptera simuliidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-03,Diptera simuliidae,0
+NWT,ALB,LAKE,ALB_1W,2018-07-05,Diptera simuliidae,0
+NWT,ALB,LAKE,ALB_2W,2018-07-05,Diptera simuliidae,0
+NWT,ALB,LAKE,ALB_3E,2018-07-05,Diptera simuliidae,0
+NWT,ALB,LAKE,ALB_4E,2018-07-05,Diptera simuliidae,0
+NWT,ALB,INLET,ALB_5IN,2018-07-05,Diptera simuliidae,0
+NWT,GL1,LAKE,GL1_2E,2018-07-12,Diptera simuliidae,0
+NWT,GL1,LAKE,GL1_3E,2018-07-12,Diptera simuliidae,0
+NWT,GL1,LAKE,GL1_5W,2018-07-12,Diptera simuliidae,0
+NWT,GL1,LAKE,GL1_7W,2018-07-12,Diptera simuliidae,0
+NWT,GL4,LAKE,GL4_1E,2018-07-17,Diptera simuliidae,0
+NWT,GL4,LAKE,GL4_2E,2018-07-17,Diptera simuliidae,0
+NWT,GL4,INLET,GL4_3IN,2018-07-17,Diptera simuliidae,52
+NWT,GL4,LAKE,GL4_4W,2018-07-17,Diptera simuliidae,0
+NWT,GL4,LAKE,GL4_5W,2018-07-17,Diptera simuliidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-17,Diptera simuliidae,0
+NWT,ALB,LAKE,ALB_1W,2018-07-19,Diptera simuliidae,0
+NWT,ALB,LAKE,ALB_2W,2018-07-19,Diptera simuliidae,0
+NWT,ALB,LAKE,ALB_3E,2018-07-19,Diptera simuliidae,0
+NWT,ALB,LAKE,ALB_4E,2018-07-19,Diptera simuliidae,0
+NWT,ALB,INLET,ALB_5IN,2018-07-19,Diptera simuliidae,0
+NWT,GL5,LAKE,GL5_1W,2018-07-31,Diptera simuliidae,0
+NWT,GL5,LAKE,GL5_2E,2018-07-31,Diptera simuliidae,0
+NWT,GL5,INLET,GL5_3IN,2018-07-31,Diptera simuliidae,0
+NWT,GL5,OUTLET,GL5_4OUT,2018-07-31,Diptera simuliidae,0
+NWT,ALB,LAKE,ALB_1W,2018-08-02,Diptera simuliidae,0
+NWT,ALB,LAKE,ALB_2W,2018-08-02,Diptera simuliidae,0
+NWT,ALB,LAKE,ALB_3E,2018-08-02,Diptera simuliidae,0
+NWT,ALB,LAKE,ALB_4E,2018-08-02,Diptera simuliidae,0
+NWT,ALB,INLET,ALB_5IN,2018-08-02,Diptera simuliidae,0
+NWT,GL4,LAKE,GL4_1E,2018-08-07,Diptera simuliidae,0
+NWT,GL4,LAKE,GL4_2E,2018-08-07,Diptera simuliidae,0
+NWT,GL4,INLET,GL4_3IN,2018-08-07,Diptera simuliidae,0
+NWT,GL4,LAKE,GL4_4W,2018-08-07,Diptera simuliidae,0
+NWT,GL4,LAKE,GL4_5W,2018-08-07,Diptera simuliidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-07,Diptera simuliidae,0
+NWT,GL1,LAKE,GL1_2E,2018-08-09,Diptera simuliidae,0
+NWT,GL1,LAKE,GL1_3E,2018-08-09,Diptera simuliidae,0
+NWT,GL1,LAKE,GL1_5W,2018-08-09,Diptera simuliidae,0
+NWT,GL1,LAKE,GL1_7W,2018-08-09,Diptera simuliidae,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-07,Diptera simuliidae,0
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-07,Diptera simuliidae,0
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Diptera simuliidae,0
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Diptera simuliidae,1
+NWT,GL4,LAKE,GL4_1E,2018-08-21,Diptera simuliidae,0
+NWT,GL4,INLET,GL4_3IN,2018-08-21,Diptera simuliidae,0
+NWT,GL4,LAKE,GL4_5W,2018-08-21,Diptera simuliidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-21,Diptera simuliidae,0
+NWT,GL4,LAKE,GL4_2E,2018-08-23,Diptera simuliidae,0
+NWT,GL4,LAKE,GL4_4W,2018-08-23,Diptera simuliidae,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-23,Diptera simuliidae,0
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-23,Diptera simuliidae,0
+NWT,GL1,LAKE,GL1_1E,2018-06-28,Amphipoda gammaridae,0
+NWT,GL1,LAKE,GL1_2E,2018-06-28,Amphipoda gammaridae,1
+NWT,GL1,LAKE,GL1_3E,2018-06-28,Amphipoda gammaridae,0
+NWT,GL1,LAKE,GL1_4E,2018-06-28,Amphipoda gammaridae,0
+NWT,GL1,LAKE,GL1_5W,2018-06-28,Amphipoda gammaridae,1
+NWT,GL1,LAKE,GL1_6W,2018-06-28,Amphipoda gammaridae,0
+NWT,GL1,LAKE,GL1_7W,2018-06-28,Amphipoda gammaridae,0
+NWT,GL4,LAKE,GL4_1E,2018-07-03,Amphipoda gammaridae,0
+NWT,GL4,LAKE,GL4_2E,2018-07-03,Amphipoda gammaridae,0
+NWT,GL4,INLET,GL4_3IN,2018-07-03,Amphipoda gammaridae,0
+NWT,GL4,LAKE,GL4_4W,2018-07-03,Amphipoda gammaridae,0
+NWT,GL4,LAKE,GL4_5W,2018-07-03,Amphipoda gammaridae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-03,Amphipoda gammaridae,0
+NWT,ALB,LAKE,ALB_1W,2018-07-05,Amphipoda gammaridae,0
+NWT,ALB,LAKE,ALB_2W,2018-07-05,Amphipoda gammaridae,0
+NWT,ALB,LAKE,ALB_3E,2018-07-05,Amphipoda gammaridae,0
+NWT,ALB,LAKE,ALB_4E,2018-07-05,Amphipoda gammaridae,0
+NWT,ALB,INLET,ALB_5IN,2018-07-05,Amphipoda gammaridae,0
+NWT,GL1,LAKE,GL1_2E,2018-07-12,Amphipoda gammaridae,0
+NWT,GL1,LAKE,GL1_3E,2018-07-12,Amphipoda gammaridae,0
+NWT,GL1,LAKE,GL1_5W,2018-07-12,Amphipoda gammaridae,1
+NWT,GL1,LAKE,GL1_7W,2018-07-12,Amphipoda gammaridae,0
+NWT,GL4,LAKE,GL4_1E,2018-07-17,Amphipoda gammaridae,0
+NWT,GL4,LAKE,GL4_2E,2018-07-17,Amphipoda gammaridae,0
+NWT,GL4,INLET,GL4_3IN,2018-07-17,Amphipoda gammaridae,0
+NWT,GL4,LAKE,GL4_4W,2018-07-17,Amphipoda gammaridae,0
+NWT,GL4,LAKE,GL4_5W,2018-07-17,Amphipoda gammaridae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-17,Amphipoda gammaridae,0
+NWT,ALB,LAKE,ALB_1W,2018-07-19,Amphipoda gammaridae,0
+NWT,ALB,LAKE,ALB_2W,2018-07-19,Amphipoda gammaridae,0
+NWT,ALB,LAKE,ALB_3E,2018-07-19,Amphipoda gammaridae,0
+NWT,ALB,LAKE,ALB_4E,2018-07-19,Amphipoda gammaridae,0
+NWT,ALB,INLET,ALB_5IN,2018-07-19,Amphipoda gammaridae,0
+NWT,GL5,LAKE,GL5_1W,2018-07-31,Amphipoda gammaridae,0
+NWT,GL5,LAKE,GL5_2E,2018-07-31,Amphipoda gammaridae,0
+NWT,GL5,INLET,GL5_3IN,2018-07-31,Amphipoda gammaridae,0
+NWT,GL5,OUTLET,GL5_4OUT,2018-07-31,Amphipoda gammaridae,0
+NWT,ALB,LAKE,ALB_1W,2018-08-02,Amphipoda gammaridae,0
+NWT,ALB,LAKE,ALB_2W,2018-08-02,Amphipoda gammaridae,0
+NWT,ALB,LAKE,ALB_3E,2018-08-02,Amphipoda gammaridae,0
+NWT,ALB,LAKE,ALB_4E,2018-08-02,Amphipoda gammaridae,0
+NWT,ALB,INLET,ALB_5IN,2018-08-02,Amphipoda gammaridae,0
+NWT,GL4,LAKE,GL4_1E,2018-08-07,Amphipoda gammaridae,0
+NWT,GL4,LAKE,GL4_2E,2018-08-07,Amphipoda gammaridae,0
+NWT,GL4,INLET,GL4_3IN,2018-08-07,Amphipoda gammaridae,0
+NWT,GL4,LAKE,GL4_4W,2018-08-07,Amphipoda gammaridae,0
+NWT,GL4,LAKE,GL4_5W,2018-08-07,Amphipoda gammaridae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-07,Amphipoda gammaridae,0
+NWT,GL1,LAKE,GL1_2E,2018-08-09,Amphipoda gammaridae,1
+NWT,GL1,LAKE,GL1_3E,2018-08-09,Amphipoda gammaridae,0
+NWT,GL1,LAKE,GL1_5W,2018-08-09,Amphipoda gammaridae,0
+NWT,GL1,LAKE,GL1_7W,2018-08-09,Amphipoda gammaridae,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-07,Amphipoda gammaridae,0
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-07,Amphipoda gammaridae,0
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Amphipoda gammaridae,0
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Amphipoda gammaridae,0
+NWT,GL4,LAKE,GL4_1E,2018-08-21,Amphipoda gammaridae,0
+NWT,GL4,INLET,GL4_3IN,2018-08-21,Amphipoda gammaridae,0
+NWT,GL4,LAKE,GL4_5W,2018-08-21,Amphipoda gammaridae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-21,Amphipoda gammaridae,0
+NWT,GL4,LAKE,GL4_2E,2018-08-23,Amphipoda gammaridae,0
+NWT,GL4,LAKE,GL4_4W,2018-08-23,Amphipoda gammaridae,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-23,Amphipoda gammaridae,0
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-23,Amphipoda gammaridae,0
+NWT,GL1,LAKE,GL1_1E,2018-06-28,Ephemeroptera baetidae ,0
+NWT,GL1,LAKE,GL1_2E,2018-06-28,Ephemeroptera baetidae ,0
+NWT,GL1,LAKE,GL1_3E,2018-06-28,Ephemeroptera baetidae ,0
+NWT,GL1,LAKE,GL1_4E,2018-06-28,Ephemeroptera baetidae ,0
+NWT,GL1,LAKE,GL1_5W,2018-06-28,Ephemeroptera baetidae ,0
+NWT,GL1,LAKE,GL1_6W,2018-06-28,Ephemeroptera baetidae ,0
+NWT,GL1,LAKE,GL1_7W,2018-06-28,Ephemeroptera baetidae ,0
+NWT,GL4,LAKE,GL4_1E,2018-07-03,Ephemeroptera baetidae ,0
+NWT,GL4,LAKE,GL4_2E,2018-07-03,Ephemeroptera baetidae ,0
+NWT,GL4,INLET,GL4_3IN,2018-07-03,Ephemeroptera baetidae ,0
+NWT,GL4,LAKE,GL4_4W,2018-07-03,Ephemeroptera baetidae ,0
+NWT,GL4,LAKE,GL4_5W,2018-07-03,Ephemeroptera baetidae ,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-03,Ephemeroptera baetidae ,50
+NWT,ALB,LAKE,ALB_1W,2018-07-05,Ephemeroptera baetidae ,0
+NWT,ALB,LAKE,ALB_2W,2018-07-05,Ephemeroptera baetidae ,0
+NWT,ALB,LAKE,ALB_3E,2018-07-05,Ephemeroptera baetidae ,0
+NWT,ALB,LAKE,ALB_4E,2018-07-05,Ephemeroptera baetidae ,0
+NWT,ALB,INLET,ALB_5IN,2018-07-05,Ephemeroptera baetidae ,11
+NWT,GL1,LAKE,GL1_2E,2018-07-12,Ephemeroptera baetidae ,0
+NWT,GL1,LAKE,GL1_3E,2018-07-12,Ephemeroptera baetidae ,0
+NWT,GL1,LAKE,GL1_5W,2018-07-12,Ephemeroptera baetidae ,0
+NWT,GL1,LAKE,GL1_7W,2018-07-12,Ephemeroptera baetidae ,0
+NWT,GL4,LAKE,GL4_1E,2018-07-17,Ephemeroptera baetidae ,0
+NWT,GL4,LAKE,GL4_2E,2018-07-17,Ephemeroptera baetidae ,0
+NWT,GL4,INLET,GL4_3IN,2018-07-17,Ephemeroptera baetidae ,4
+NWT,GL4,LAKE,GL4_4W,2018-07-17,Ephemeroptera baetidae ,0
+NWT,GL4,LAKE,GL4_5W,2018-07-17,Ephemeroptera baetidae ,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-17,Ephemeroptera baetidae ,29
+NWT,ALB,LAKE,ALB_1W,2018-07-19,Ephemeroptera baetidae ,0
+NWT,ALB,LAKE,ALB_2W,2018-07-19,Ephemeroptera baetidae ,0
+NWT,ALB,LAKE,ALB_3E,2018-07-19,Ephemeroptera baetidae ,0
+NWT,ALB,LAKE,ALB_4E,2018-07-19,Ephemeroptera baetidae ,0
+NWT,ALB,INLET,ALB_5IN,2018-07-19,Ephemeroptera baetidae ,4
+NWT,GL5,LAKE,GL5_1W,2018-07-31,Ephemeroptera baetidae ,0
+NWT,GL5,LAKE,GL5_2E,2018-07-31,Ephemeroptera baetidae ,0
+NWT,GL5,INLET,GL5_3IN,2018-07-31,Ephemeroptera baetidae ,0
+NWT,GL5,OUTLET,GL5_4OUT,2018-07-31,Ephemeroptera baetidae ,0
+NWT,ALB,LAKE,ALB_1W,2018-08-02,Ephemeroptera baetidae ,1
+NWT,ALB,LAKE,ALB_2W,2018-08-02,Ephemeroptera baetidae ,0
+NWT,ALB,LAKE,ALB_3E,2018-08-02,Ephemeroptera baetidae ,0
+NWT,ALB,LAKE,ALB_4E,2018-08-02,Ephemeroptera baetidae ,0
+NWT,ALB,INLET,ALB_5IN,2018-08-02,Ephemeroptera baetidae ,6
+NWT,GL4,LAKE,GL4_1E,2018-08-07,Ephemeroptera baetidae ,0
+NWT,GL4,LAKE,GL4_2E,2018-08-07,Ephemeroptera baetidae ,0
+NWT,GL4,INLET,GL4_3IN,2018-08-07,Ephemeroptera baetidae ,0
+NWT,GL4,LAKE,GL4_4W,2018-08-07,Ephemeroptera baetidae ,0
+NWT,GL4,LAKE,GL4_5W,2018-08-07,Ephemeroptera baetidae ,1
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-07,Ephemeroptera baetidae ,15
+NWT,GL1,LAKE,GL1_2E,2018-08-09,Ephemeroptera baetidae ,0
+NWT,GL1,LAKE,GL1_3E,2018-08-09,Ephemeroptera baetidae ,0
+NWT,GL1,LAKE,GL1_5W,2018-08-09,Ephemeroptera baetidae ,0
+NWT,GL1,LAKE,GL1_7W,2018-08-09,Ephemeroptera baetidae ,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-07,Ephemeroptera baetidae ,0
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-07,Ephemeroptera baetidae ,0
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Ephemeroptera baetidae ,0
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Ephemeroptera baetidae ,1
+NWT,GL4,LAKE,GL4_1E,2018-08-21,Ephemeroptera baetidae ,1
+NWT,GL4,INLET,GL4_3IN,2018-08-21,Ephemeroptera baetidae ,0
+NWT,GL4,LAKE,GL4_5W,2018-08-21,Ephemeroptera baetidae ,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-21,Ephemeroptera baetidae ,11
+NWT,GL4,LAKE,GL4_2E,2018-08-23,Ephemeroptera baetidae ,0
+NWT,GL4,LAKE,GL4_4W,2018-08-23,Ephemeroptera baetidae ,1
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-23,Ephemeroptera baetidae ,0
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-23,Ephemeroptera baetidae ,5
+NWT,GL1,LAKE,GL1_1E,2018-06-28,Ephemeroptera ameletidae ameletus,0
+NWT,GL1,LAKE,GL1_2E,2018-06-28,Ephemeroptera ameletidae ameletus,0
+NWT,GL1,LAKE,GL1_3E,2018-06-28,Ephemeroptera ameletidae ameletus,0
+NWT,GL1,LAKE,GL1_4E,2018-06-28,Ephemeroptera ameletidae ameletus,0
+NWT,GL1,LAKE,GL1_5W,2018-06-28,Ephemeroptera ameletidae ameletus,0
+NWT,GL1,LAKE,GL1_6W,2018-06-28,Ephemeroptera ameletidae ameletus,0
+NWT,GL1,LAKE,GL1_7W,2018-06-28,Ephemeroptera ameletidae ameletus,0
+NWT,GL4,LAKE,GL4_1E,2018-07-03,Ephemeroptera ameletidae ameletus,1
+NWT,GL4,LAKE,GL4_2E,2018-07-03,Ephemeroptera ameletidae ameletus,2
+NWT,GL4,INLET,GL4_3IN,2018-07-03,Ephemeroptera ameletidae ameletus,2
+NWT,GL4,LAKE,GL4_4W,2018-07-03,Ephemeroptera ameletidae ameletus,0
+NWT,GL4,LAKE,GL4_5W,2018-07-03,Ephemeroptera ameletidae ameletus,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-03,Ephemeroptera ameletidae ameletus,0
+NWT,ALB,LAKE,ALB_1W,2018-07-05,Ephemeroptera ameletidae ameletus,0
+NWT,ALB,LAKE,ALB_2W,2018-07-05,Ephemeroptera ameletidae ameletus,0
+NWT,ALB,LAKE,ALB_3E,2018-07-05,Ephemeroptera ameletidae ameletus,0
+NWT,ALB,LAKE,ALB_4E,2018-07-05,Ephemeroptera ameletidae ameletus,0
+NWT,ALB,INLET,ALB_5IN,2018-07-05,Ephemeroptera ameletidae ameletus,0
+NWT,GL1,LAKE,GL1_2E,2018-07-12,Ephemeroptera ameletidae ameletus,0
+NWT,GL1,LAKE,GL1_3E,2018-07-12,Ephemeroptera ameletidae ameletus,0
+NWT,GL1,LAKE,GL1_5W,2018-07-12,Ephemeroptera ameletidae ameletus,0
+NWT,GL1,LAKE,GL1_7W,2018-07-12,Ephemeroptera ameletidae ameletus,0
+NWT,GL4,LAKE,GL4_1E,2018-07-17,Ephemeroptera ameletidae ameletus,2
+NWT,GL4,LAKE,GL4_2E,2018-07-17,Ephemeroptera ameletidae ameletus,5
+NWT,GL4,INLET,GL4_3IN,2018-07-17,Ephemeroptera ameletidae ameletus,0
+NWT,GL4,LAKE,GL4_4W,2018-07-17,Ephemeroptera ameletidae ameletus,1
+NWT,GL4,LAKE,GL4_5W,2018-07-17,Ephemeroptera ameletidae ameletus,3
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-17,Ephemeroptera ameletidae ameletus,0
+NWT,ALB,LAKE,ALB_1W,2018-07-19,Ephemeroptera ameletidae ameletus,0
+NWT,ALB,LAKE,ALB_2W,2018-07-19,Ephemeroptera ameletidae ameletus,0
+NWT,ALB,LAKE,ALB_3E,2018-07-19,Ephemeroptera ameletidae ameletus,0
+NWT,ALB,LAKE,ALB_4E,2018-07-19,Ephemeroptera ameletidae ameletus,0
+NWT,ALB,INLET,ALB_5IN,2018-07-19,Ephemeroptera ameletidae ameletus,0
+NWT,GL5,LAKE,GL5_1W,2018-07-31,Ephemeroptera ameletidae ameletus,0
+NWT,GL5,LAKE,GL5_2E,2018-07-31,Ephemeroptera ameletidae ameletus,0
+NWT,GL5,INLET,GL5_3IN,2018-07-31,Ephemeroptera ameletidae ameletus,0
+NWT,GL5,OUTLET,GL5_4OUT,2018-07-31,Ephemeroptera ameletidae ameletus,0
+NWT,ALB,LAKE,ALB_1W,2018-08-02,Ephemeroptera ameletidae ameletus,0
+NWT,ALB,LAKE,ALB_2W,2018-08-02,Ephemeroptera ameletidae ameletus,0
+NWT,ALB,LAKE,ALB_3E,2018-08-02,Ephemeroptera ameletidae ameletus,1
+NWT,ALB,LAKE,ALB_4E,2018-08-02,Ephemeroptera ameletidae ameletus,0
+NWT,ALB,INLET,ALB_5IN,2018-08-02,Ephemeroptera ameletidae ameletus,0
+NWT,GL4,LAKE,GL4_1E,2018-08-07,Ephemeroptera ameletidae ameletus,1
+NWT,GL4,LAKE,GL4_2E,2018-08-07,Ephemeroptera ameletidae ameletus,1
+NWT,GL4,INLET,GL4_3IN,2018-08-07,Ephemeroptera ameletidae ameletus,9
+NWT,GL4,LAKE,GL4_4W,2018-08-07,Ephemeroptera ameletidae ameletus,1
+NWT,GL4,LAKE,GL4_5W,2018-08-07,Ephemeroptera ameletidae ameletus,5
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-07,Ephemeroptera ameletidae ameletus,0
+NWT,GL1,LAKE,GL1_2E,2018-08-09,Ephemeroptera ameletidae ameletus,0
+NWT,GL1,LAKE,GL1_3E,2018-08-09,Ephemeroptera ameletidae ameletus,0
+NWT,GL1,LAKE,GL1_5W,2018-08-09,Ephemeroptera ameletidae ameletus,0
+NWT,GL1,LAKE,GL1_7W,2018-08-09,Ephemeroptera ameletidae ameletus,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-07,Ephemeroptera ameletidae ameletus,1
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-07,Ephemeroptera ameletidae ameletus,5
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Ephemeroptera ameletidae ameletus,11
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Ephemeroptera ameletidae ameletus,10
+NWT,GL4,LAKE,GL4_1E,2018-08-21,Ephemeroptera ameletidae ameletus,1
+NWT,GL4,INLET,GL4_3IN,2018-08-21,Ephemeroptera ameletidae ameletus,34
+NWT,GL4,LAKE,GL4_5W,2018-08-21,Ephemeroptera ameletidae ameletus,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-21,Ephemeroptera ameletidae ameletus,0
+NWT,GL4,LAKE,GL4_2E,2018-08-23,Ephemeroptera ameletidae ameletus,0
+NWT,GL4,LAKE,GL4_4W,2018-08-23,Ephemeroptera ameletidae ameletus,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-23,Ephemeroptera ameletidae ameletus,2
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-23,Ephemeroptera ameletidae ameletus,4
+NWT,GL1,LAKE,GL1_1E,2018-06-28,Ephemeroptera siphlonuridae,0
+NWT,GL1,LAKE,GL1_2E,2018-06-28,Ephemeroptera siphlonuridae,0
+NWT,GL1,LAKE,GL1_3E,2018-06-28,Ephemeroptera siphlonuridae,0
+NWT,GL1,LAKE,GL1_4E,2018-06-28,Ephemeroptera siphlonuridae,0
+NWT,GL1,LAKE,GL1_5W,2018-06-28,Ephemeroptera siphlonuridae,0
+NWT,GL1,LAKE,GL1_6W,2018-06-28,Ephemeroptera siphlonuridae,0
+NWT,GL1,LAKE,GL1_7W,2018-06-28,Ephemeroptera siphlonuridae,0
+NWT,GL4,LAKE,GL4_1E,2018-07-03,Ephemeroptera siphlonuridae,0
+NWT,GL4,LAKE,GL4_2E,2018-07-03,Ephemeroptera siphlonuridae,0
+NWT,GL4,INLET,GL4_3IN,2018-07-03,Ephemeroptera siphlonuridae,0
+NWT,GL4,LAKE,GL4_4W,2018-07-03,Ephemeroptera siphlonuridae,0
+NWT,GL4,LAKE,GL4_5W,2018-07-03,Ephemeroptera siphlonuridae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-03,Ephemeroptera siphlonuridae,0
+NWT,ALB,LAKE,ALB_1W,2018-07-05,Ephemeroptera siphlonuridae,0
+NWT,ALB,LAKE,ALB_2W,2018-07-05,Ephemeroptera siphlonuridae,0
+NWT,ALB,LAKE,ALB_3E,2018-07-05,Ephemeroptera siphlonuridae,0
+NWT,ALB,LAKE,ALB_4E,2018-07-05,Ephemeroptera siphlonuridae,0
+NWT,ALB,INLET,ALB_5IN,2018-07-05,Ephemeroptera siphlonuridae,0
+NWT,GL1,LAKE,GL1_2E,2018-07-12,Ephemeroptera siphlonuridae,0
+NWT,GL1,LAKE,GL1_3E,2018-07-12,Ephemeroptera siphlonuridae,0
+NWT,GL1,LAKE,GL1_5W,2018-07-12,Ephemeroptera siphlonuridae,0
+NWT,GL1,LAKE,GL1_7W,2018-07-12,Ephemeroptera siphlonuridae,0
+NWT,GL4,LAKE,GL4_1E,2018-07-17,Ephemeroptera siphlonuridae,0
+NWT,GL4,LAKE,GL4_2E,2018-07-17,Ephemeroptera siphlonuridae,0
+NWT,GL4,INLET,GL4_3IN,2018-07-17,Ephemeroptera siphlonuridae,0
+NWT,GL4,LAKE,GL4_4W,2018-07-17,Ephemeroptera siphlonuridae,0
+NWT,GL4,LAKE,GL4_5W,2018-07-17,Ephemeroptera siphlonuridae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-17,Ephemeroptera siphlonuridae,0
+NWT,ALB,LAKE,ALB_1W,2018-07-19,Ephemeroptera siphlonuridae,0
+NWT,ALB,LAKE,ALB_2W,2018-07-19,Ephemeroptera siphlonuridae,0
+NWT,ALB,LAKE,ALB_3E,2018-07-19,Ephemeroptera siphlonuridae,0
+NWT,ALB,LAKE,ALB_4E,2018-07-19,Ephemeroptera siphlonuridae,0
+NWT,ALB,INLET,ALB_5IN,2018-07-19,Ephemeroptera siphlonuridae,0
+NWT,GL5,LAKE,GL5_1W,2018-07-31,Ephemeroptera siphlonuridae,0
+NWT,GL5,LAKE,GL5_2E,2018-07-31,Ephemeroptera siphlonuridae,0
+NWT,GL5,INLET,GL5_3IN,2018-07-31,Ephemeroptera siphlonuridae,0
+NWT,GL5,OUTLET,GL5_4OUT,2018-07-31,Ephemeroptera siphlonuridae,0
+NWT,ALB,LAKE,ALB_1W,2018-08-02,Ephemeroptera siphlonuridae,0
+NWT,ALB,LAKE,ALB_2W,2018-08-02,Ephemeroptera siphlonuridae,0
+NWT,ALB,LAKE,ALB_3E,2018-08-02,Ephemeroptera siphlonuridae,0
+NWT,ALB,LAKE,ALB_4E,2018-08-02,Ephemeroptera siphlonuridae,0
+NWT,ALB,INLET,ALB_5IN,2018-08-02,Ephemeroptera siphlonuridae,0
+NWT,GL4,LAKE,GL4_1E,2018-08-07,Ephemeroptera siphlonuridae,0
+NWT,GL4,LAKE,GL4_2E,2018-08-07,Ephemeroptera siphlonuridae,0
+NWT,GL4,INLET,GL4_3IN,2018-08-07,Ephemeroptera siphlonuridae,0
+NWT,GL4,LAKE,GL4_4W,2018-08-07,Ephemeroptera siphlonuridae,0
+NWT,GL4,LAKE,GL4_5W,2018-08-07,Ephemeroptera siphlonuridae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-07,Ephemeroptera siphlonuridae,0
+NWT,GL1,LAKE,GL1_2E,2018-08-09,Ephemeroptera siphlonuridae,0
+NWT,GL1,LAKE,GL1_3E,2018-08-09,Ephemeroptera siphlonuridae,0
+NWT,GL1,LAKE,GL1_5W,2018-08-09,Ephemeroptera siphlonuridae,0
+NWT,GL1,LAKE,GL1_7W,2018-08-09,Ephemeroptera siphlonuridae,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-07,Ephemeroptera siphlonuridae,2
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-07,Ephemeroptera siphlonuridae,1
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Ephemeroptera siphlonuridae,0
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Ephemeroptera siphlonuridae,0
+NWT,GL4,LAKE,GL4_1E,2018-08-21,Ephemeroptera siphlonuridae,0
+NWT,GL4,INLET,GL4_3IN,2018-08-21,Ephemeroptera siphlonuridae,0
+NWT,GL4,LAKE,GL4_5W,2018-08-21,Ephemeroptera siphlonuridae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-21,Ephemeroptera siphlonuridae,0
+NWT,GL4,LAKE,GL4_2E,2018-08-23,Ephemeroptera siphlonuridae,0
+NWT,GL4,LAKE,GL4_4W,2018-08-23,Ephemeroptera siphlonuridae,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-23,Ephemeroptera siphlonuridae,3
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-23,Ephemeroptera siphlonuridae,0
+NWT,GL1,LAKE,GL1_1E,2018-06-28,Coleoptera dytiscidae,0
+NWT,GL1,LAKE,GL1_2E,2018-06-28,Coleoptera dytiscidae,0
+NWT,GL1,LAKE,GL1_3E,2018-06-28,Coleoptera dytiscidae,0
+NWT,GL1,LAKE,GL1_4E,2018-06-28,Coleoptera dytiscidae,0
+NWT,GL1,LAKE,GL1_5W,2018-06-28,Coleoptera dytiscidae,0
+NWT,GL1,LAKE,GL1_6W,2018-06-28,Coleoptera dytiscidae,0
+NWT,GL1,LAKE,GL1_7W,2018-06-28,Coleoptera dytiscidae,0
+NWT,GL4,LAKE,GL4_1E,2018-07-03,Coleoptera dytiscidae,0
+NWT,GL4,LAKE,GL4_2E,2018-07-03,Coleoptera dytiscidae,0
+NWT,GL4,INLET,GL4_3IN,2018-07-03,Coleoptera dytiscidae,0
+NWT,GL4,LAKE,GL4_4W,2018-07-03,Coleoptera dytiscidae,0
+NWT,GL4,LAKE,GL4_5W,2018-07-03,Coleoptera dytiscidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-03,Coleoptera dytiscidae,0
+NWT,ALB,LAKE,ALB_1W,2018-07-05,Coleoptera dytiscidae,0
+NWT,ALB,LAKE,ALB_2W,2018-07-05,Coleoptera dytiscidae,0
+NWT,ALB,LAKE,ALB_3E,2018-07-05,Coleoptera dytiscidae,0
+NWT,ALB,LAKE,ALB_4E,2018-07-05,Coleoptera dytiscidae,0
+NWT,ALB,INLET,ALB_5IN,2018-07-05,Coleoptera dytiscidae,0
+NWT,GL1,LAKE,GL1_2E,2018-07-12,Coleoptera dytiscidae,0
+NWT,GL1,LAKE,GL1_3E,2018-07-12,Coleoptera dytiscidae,0
+NWT,GL1,LAKE,GL1_5W,2018-07-12,Coleoptera dytiscidae,0
+NWT,GL1,LAKE,GL1_7W,2018-07-12,Coleoptera dytiscidae,0
+NWT,GL4,LAKE,GL4_1E,2018-07-17,Coleoptera dytiscidae,1
+NWT,GL4,LAKE,GL4_2E,2018-07-17,Coleoptera dytiscidae,0
+NWT,GL4,INLET,GL4_3IN,2018-07-17,Coleoptera dytiscidae,0
+NWT,GL4,LAKE,GL4_4W,2018-07-17,Coleoptera dytiscidae,0
+NWT,GL4,LAKE,GL4_5W,2018-07-17,Coleoptera dytiscidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-17,Coleoptera dytiscidae,0
+NWT,ALB,LAKE,ALB_1W,2018-07-19,Coleoptera dytiscidae,0
+NWT,ALB,LAKE,ALB_2W,2018-07-19,Coleoptera dytiscidae,0
+NWT,ALB,LAKE,ALB_3E,2018-07-19,Coleoptera dytiscidae,0
+NWT,ALB,LAKE,ALB_4E,2018-07-19,Coleoptera dytiscidae,0
+NWT,ALB,INLET,ALB_5IN,2018-07-19,Coleoptera dytiscidae,0
+NWT,GL5,LAKE,GL5_1W,2018-07-31,Coleoptera dytiscidae,0
+NWT,GL5,LAKE,GL5_2E,2018-07-31,Coleoptera dytiscidae,0
+NWT,GL5,INLET,GL5_3IN,2018-07-31,Coleoptera dytiscidae,0
+NWT,GL5,OUTLET,GL5_4OUT,2018-07-31,Coleoptera dytiscidae,0
+NWT,ALB,LAKE,ALB_1W,2018-08-02,Coleoptera dytiscidae,0
+NWT,ALB,LAKE,ALB_2W,2018-08-02,Coleoptera dytiscidae,0
+NWT,ALB,LAKE,ALB_3E,2018-08-02,Coleoptera dytiscidae,0
+NWT,ALB,LAKE,ALB_4E,2018-08-02,Coleoptera dytiscidae,0
+NWT,ALB,INLET,ALB_5IN,2018-08-02,Coleoptera dytiscidae,0
+NWT,GL4,LAKE,GL4_1E,2018-08-07,Coleoptera dytiscidae,0
+NWT,GL4,LAKE,GL4_2E,2018-08-07,Coleoptera dytiscidae,0
+NWT,GL4,INLET,GL4_3IN,2018-08-07,Coleoptera dytiscidae,0
+NWT,GL4,LAKE,GL4_4W,2018-08-07,Coleoptera dytiscidae,0
+NWT,GL4,LAKE,GL4_5W,2018-08-07,Coleoptera dytiscidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-07,Coleoptera dytiscidae,0
+NWT,GL1,LAKE,GL1_2E,2018-08-09,Coleoptera dytiscidae,0
+NWT,GL1,LAKE,GL1_3E,2018-08-09,Coleoptera dytiscidae,0
+NWT,GL1,LAKE,GL1_5W,2018-08-09,Coleoptera dytiscidae,0
+NWT,GL1,LAKE,GL1_7W,2018-08-09,Coleoptera dytiscidae,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-07,Coleoptera dytiscidae,0
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-07,Coleoptera dytiscidae,0
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Coleoptera dytiscidae,0
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Coleoptera dytiscidae,0
+NWT,GL4,LAKE,GL4_1E,2018-08-21,Coleoptera dytiscidae,0
+NWT,GL4,INLET,GL4_3IN,2018-08-21,Coleoptera dytiscidae,0
+NWT,GL4,LAKE,GL4_5W,2018-08-21,Coleoptera dytiscidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-21,Coleoptera dytiscidae,0
+NWT,GL4,LAKE,GL4_2E,2018-08-23,Coleoptera dytiscidae,0
+NWT,GL4,LAKE,GL4_4W,2018-08-23,Coleoptera dytiscidae,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-23,Coleoptera dytiscidae,0
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-23,Coleoptera dytiscidae,0
+NWT,GL1,LAKE,GL1_1E,2018-06-28,Plecoptera perlidae claassenia ,0
+NWT,GL1,LAKE,GL1_2E,2018-06-28,Plecoptera perlidae claassenia ,0
+NWT,GL1,LAKE,GL1_3E,2018-06-28,Plecoptera perlidae claassenia ,0
+NWT,GL1,LAKE,GL1_4E,2018-06-28,Plecoptera perlidae claassenia ,0
+NWT,GL1,LAKE,GL1_5W,2018-06-28,Plecoptera perlidae claassenia ,0
+NWT,GL1,LAKE,GL1_6W,2018-06-28,Plecoptera perlidae claassenia ,0
+NWT,GL1,LAKE,GL1_7W,2018-06-28,Plecoptera perlidae claassenia ,0
+NWT,GL4,LAKE,GL4_1E,2018-07-03,Plecoptera perlidae claassenia ,0
+NWT,GL4,LAKE,GL4_2E,2018-07-03,Plecoptera perlidae claassenia ,0
+NWT,GL4,INLET,GL4_3IN,2018-07-03,Plecoptera perlidae claassenia ,0
+NWT,GL4,LAKE,GL4_4W,2018-07-03,Plecoptera perlidae claassenia ,0
+NWT,GL4,LAKE,GL4_5W,2018-07-03,Plecoptera perlidae claassenia ,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-03,Plecoptera perlidae claassenia ,0
+NWT,ALB,LAKE,ALB_1W,2018-07-05,Plecoptera perlidae claassenia ,0
+NWT,ALB,LAKE,ALB_2W,2018-07-05,Plecoptera perlidae claassenia ,0
+NWT,ALB,LAKE,ALB_3E,2018-07-05,Plecoptera perlidae claassenia ,0
+NWT,ALB,LAKE,ALB_4E,2018-07-05,Plecoptera perlidae claassenia ,0
+NWT,ALB,INLET,ALB_5IN,2018-07-05,Plecoptera perlidae claassenia ,0
+NWT,GL1,LAKE,GL1_2E,2018-07-12,Plecoptera perlidae claassenia ,0
+NWT,GL1,LAKE,GL1_3E,2018-07-12,Plecoptera perlidae claassenia ,0
+NWT,GL1,LAKE,GL1_5W,2018-07-12,Plecoptera perlidae claassenia ,0
+NWT,GL1,LAKE,GL1_7W,2018-07-12,Plecoptera perlidae claassenia ,0
+NWT,GL4,LAKE,GL4_1E,2018-07-17,Plecoptera perlidae claassenia ,0
+NWT,GL4,LAKE,GL4_2E,2018-07-17,Plecoptera perlidae claassenia ,0
+NWT,GL4,INLET,GL4_3IN,2018-07-17,Plecoptera perlidae claassenia ,0
+NWT,GL4,LAKE,GL4_4W,2018-07-17,Plecoptera perlidae claassenia ,0
+NWT,GL4,LAKE,GL4_5W,2018-07-17,Plecoptera perlidae claassenia ,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-17,Plecoptera perlidae claassenia ,0
+NWT,ALB,LAKE,ALB_1W,2018-07-19,Plecoptera perlidae claassenia ,0
+NWT,ALB,LAKE,ALB_2W,2018-07-19,Plecoptera perlidae claassenia ,0
+NWT,ALB,LAKE,ALB_3E,2018-07-19,Plecoptera perlidae claassenia ,0
+NWT,ALB,LAKE,ALB_4E,2018-07-19,Plecoptera perlidae claassenia ,0
+NWT,ALB,INLET,ALB_5IN,2018-07-19,Plecoptera perlidae claassenia ,0
+NWT,GL5,LAKE,GL5_1W,2018-07-31,Plecoptera perlidae claassenia ,0
+NWT,GL5,LAKE,GL5_2E,2018-07-31,Plecoptera perlidae claassenia ,0
+NWT,GL5,INLET,GL5_3IN,2018-07-31,Plecoptera perlidae claassenia ,0
+NWT,GL5,OUTLET,GL5_4OUT,2018-07-31,Plecoptera perlidae claassenia ,0
+NWT,ALB,LAKE,ALB_1W,2018-08-02,Plecoptera perlidae claassenia ,0
+NWT,ALB,LAKE,ALB_2W,2018-08-02,Plecoptera perlidae claassenia ,0
+NWT,ALB,LAKE,ALB_3E,2018-08-02,Plecoptera perlidae claassenia ,0
+NWT,ALB,LAKE,ALB_4E,2018-08-02,Plecoptera perlidae claassenia ,0
+NWT,ALB,INLET,ALB_5IN,2018-08-02,Plecoptera perlidae claassenia ,0
+NWT,GL4,LAKE,GL4_1E,2018-08-07,Plecoptera perlidae claassenia ,0
+NWT,GL4,LAKE,GL4_2E,2018-08-07,Plecoptera perlidae claassenia ,0
+NWT,GL4,INLET,GL4_3IN,2018-08-07,Plecoptera perlidae claassenia ,0
+NWT,GL4,LAKE,GL4_4W,2018-08-07,Plecoptera perlidae claassenia ,0
+NWT,GL4,LAKE,GL4_5W,2018-08-07,Plecoptera perlidae claassenia ,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-07,Plecoptera perlidae claassenia ,0
+NWT,GL1,LAKE,GL1_2E,2018-08-09,Plecoptera perlidae claassenia ,0
+NWT,GL1,LAKE,GL1_3E,2018-08-09,Plecoptera perlidae claassenia ,0
+NWT,GL1,LAKE,GL1_5W,2018-08-09,Plecoptera perlidae claassenia ,0
+NWT,GL1,LAKE,GL1_7W,2018-08-09,Plecoptera perlidae claassenia ,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-07,Plecoptera perlidae claassenia ,0
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-07,Plecoptera perlidae claassenia ,0
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Plecoptera perlidae claassenia ,11
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Plecoptera perlidae claassenia ,0
+NWT,GL4,LAKE,GL4_1E,2018-08-21,Plecoptera perlidae claassenia ,0
+NWT,GL4,INLET,GL4_3IN,2018-08-21,Plecoptera perlidae claassenia ,0
+NWT,GL4,LAKE,GL4_5W,2018-08-21,Plecoptera perlidae claassenia ,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-21,Plecoptera perlidae claassenia ,0
+NWT,GL4,LAKE,GL4_2E,2018-08-23,Plecoptera perlidae claassenia ,0
+NWT,GL4,LAKE,GL4_4W,2018-08-23,Plecoptera perlidae claassenia ,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-23,Plecoptera perlidae claassenia ,0
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-23,Plecoptera perlidae claassenia ,0
+NWT,GL1,LAKE,GL1_1E,2018-06-28,Plecoptera perlodidae,0
+NWT,GL1,LAKE,GL1_2E,2018-06-28,Plecoptera perlodidae,0
+NWT,GL1,LAKE,GL1_3E,2018-06-28,Plecoptera perlodidae,0
+NWT,GL1,LAKE,GL1_4E,2018-06-28,Plecoptera perlodidae,0
+NWT,GL1,LAKE,GL1_5W,2018-06-28,Plecoptera perlodidae,0
+NWT,GL1,LAKE,GL1_6W,2018-06-28,Plecoptera perlodidae,0
+NWT,GL1,LAKE,GL1_7W,2018-06-28,Plecoptera perlodidae,0
+NWT,GL4,LAKE,GL4_1E,2018-07-03,Plecoptera perlodidae,0
+NWT,GL4,LAKE,GL4_2E,2018-07-03,Plecoptera perlodidae,0
+NWT,GL4,INLET,GL4_3IN,2018-07-03,Plecoptera perlodidae,0
+NWT,GL4,LAKE,GL4_4W,2018-07-03,Plecoptera perlodidae,0
+NWT,GL4,LAKE,GL4_5W,2018-07-03,Plecoptera perlodidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-03,Plecoptera perlodidae,0
+NWT,ALB,LAKE,ALB_1W,2018-07-05,Plecoptera perlodidae,0
+NWT,ALB,LAKE,ALB_2W,2018-07-05,Plecoptera perlodidae,0
+NWT,ALB,LAKE,ALB_3E,2018-07-05,Plecoptera perlodidae,0
+NWT,ALB,LAKE,ALB_4E,2018-07-05,Plecoptera perlodidae,0
+NWT,ALB,INLET,ALB_5IN,2018-07-05,Plecoptera perlodidae,0
+NWT,GL1,LAKE,GL1_2E,2018-07-12,Plecoptera perlodidae,0
+NWT,GL1,LAKE,GL1_3E,2018-07-12,Plecoptera perlodidae,0
+NWT,GL1,LAKE,GL1_5W,2018-07-12,Plecoptera perlodidae,0
+NWT,GL1,LAKE,GL1_7W,2018-07-12,Plecoptera perlodidae,0
+NWT,GL4,LAKE,GL4_1E,2018-07-17,Plecoptera perlodidae,0
+NWT,GL4,LAKE,GL4_2E,2018-07-17,Plecoptera perlodidae,0
+NWT,GL4,INLET,GL4_3IN,2018-07-17,Plecoptera perlodidae,0
+NWT,GL4,LAKE,GL4_4W,2018-07-17,Plecoptera perlodidae,0
+NWT,GL4,LAKE,GL4_5W,2018-07-17,Plecoptera perlodidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-17,Plecoptera perlodidae,1
+NWT,ALB,LAKE,ALB_1W,2018-07-19,Plecoptera perlodidae,0
+NWT,ALB,LAKE,ALB_2W,2018-07-19,Plecoptera perlodidae,0
+NWT,ALB,LAKE,ALB_3E,2018-07-19,Plecoptera perlodidae,0
+NWT,ALB,LAKE,ALB_4E,2018-07-19,Plecoptera perlodidae,0
+NWT,ALB,INLET,ALB_5IN,2018-07-19,Plecoptera perlodidae,0
+NWT,GL5,LAKE,GL5_1W,2018-07-31,Plecoptera perlodidae,0
+NWT,GL5,LAKE,GL5_2E,2018-07-31,Plecoptera perlodidae,1
+NWT,GL5,INLET,GL5_3IN,2018-07-31,Plecoptera perlodidae,1
+NWT,GL5,OUTLET,GL5_4OUT,2018-07-31,Plecoptera perlodidae,1
+NWT,ALB,LAKE,ALB_1W,2018-08-02,Plecoptera perlodidae,0
+NWT,ALB,LAKE,ALB_2W,2018-08-02,Plecoptera perlodidae,0
+NWT,ALB,LAKE,ALB_3E,2018-08-02,Plecoptera perlodidae,0
+NWT,ALB,LAKE,ALB_4E,2018-08-02,Plecoptera perlodidae,0
+NWT,ALB,INLET,ALB_5IN,2018-08-02,Plecoptera perlodidae,4
+NWT,GL4,LAKE,GL4_1E,2018-08-07,Plecoptera perlodidae,0
+NWT,GL4,LAKE,GL4_2E,2018-08-07,Plecoptera perlodidae,0
+NWT,GL4,INLET,GL4_3IN,2018-08-07,Plecoptera perlodidae,1
+NWT,GL4,LAKE,GL4_4W,2018-08-07,Plecoptera perlodidae,0
+NWT,GL4,LAKE,GL4_5W,2018-08-07,Plecoptera perlodidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-07,Plecoptera perlodidae,0
+NWT,GL1,LAKE,GL1_2E,2018-08-09,Plecoptera perlodidae,0
+NWT,GL1,LAKE,GL1_3E,2018-08-09,Plecoptera perlodidae,0
+NWT,GL1,LAKE,GL1_5W,2018-08-09,Plecoptera perlodidae,0
+NWT,GL1,LAKE,GL1_7W,2018-08-09,Plecoptera perlodidae,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-07,Plecoptera perlodidae,0
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-07,Plecoptera perlodidae,1
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Plecoptera perlodidae,0
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Plecoptera perlodidae,3
+NWT,GL4,LAKE,GL4_1E,2018-08-21,Plecoptera perlodidae,0
+NWT,GL4,INLET,GL4_3IN,2018-08-21,Plecoptera perlodidae,0
+NWT,GL4,LAKE,GL4_5W,2018-08-21,Plecoptera perlodidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-21,Plecoptera perlodidae,0
+NWT,GL4,LAKE,GL4_2E,2018-08-23,Plecoptera perlodidae,0
+NWT,GL4,LAKE,GL4_4W,2018-08-23,Plecoptera perlodidae,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-23,Plecoptera perlodidae,0
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-23,Plecoptera perlodidae,0
+NWT,GL1,LAKE,GL1_1E,2018-06-28,Plecoptera chloroperlidae,0
+NWT,GL1,LAKE,GL1_2E,2018-06-28,Plecoptera chloroperlidae,0
+NWT,GL1,LAKE,GL1_3E,2018-06-28,Plecoptera chloroperlidae,0
+NWT,GL1,LAKE,GL1_4E,2018-06-28,Plecoptera chloroperlidae,0
+NWT,GL1,LAKE,GL1_5W,2018-06-28,Plecoptera chloroperlidae,0
+NWT,GL1,LAKE,GL1_6W,2018-06-28,Plecoptera chloroperlidae,0
+NWT,GL1,LAKE,GL1_7W,2018-06-28,Plecoptera chloroperlidae,0
+NWT,GL4,LAKE,GL4_1E,2018-07-03,Plecoptera chloroperlidae,0
+NWT,GL4,LAKE,GL4_2E,2018-07-03,Plecoptera chloroperlidae,0
+NWT,GL4,INLET,GL4_3IN,2018-07-03,Plecoptera chloroperlidae,0
+NWT,GL4,LAKE,GL4_4W,2018-07-03,Plecoptera chloroperlidae,0
+NWT,GL4,LAKE,GL4_5W,2018-07-03,Plecoptera chloroperlidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-03,Plecoptera chloroperlidae,0
+NWT,ALB,LAKE,ALB_1W,2018-07-05,Plecoptera chloroperlidae,0
+NWT,ALB,LAKE,ALB_2W,2018-07-05,Plecoptera chloroperlidae,0
+NWT,ALB,LAKE,ALB_3E,2018-07-05,Plecoptera chloroperlidae,0
+NWT,ALB,LAKE,ALB_4E,2018-07-05,Plecoptera chloroperlidae,0
+NWT,ALB,INLET,ALB_5IN,2018-07-05,Plecoptera chloroperlidae,0
+NWT,GL1,LAKE,GL1_2E,2018-07-12,Plecoptera chloroperlidae,0
+NWT,GL1,LAKE,GL1_3E,2018-07-12,Plecoptera chloroperlidae,0
+NWT,GL1,LAKE,GL1_5W,2018-07-12,Plecoptera chloroperlidae,0
+NWT,GL1,LAKE,GL1_7W,2018-07-12,Plecoptera chloroperlidae,0
+NWT,GL4,LAKE,GL4_1E,2018-07-17,Plecoptera chloroperlidae,0
+NWT,GL4,LAKE,GL4_2E,2018-07-17,Plecoptera chloroperlidae,0
+NWT,GL4,INLET,GL4_3IN,2018-07-17,Plecoptera chloroperlidae,0
+NWT,GL4,LAKE,GL4_4W,2018-07-17,Plecoptera chloroperlidae,0
+NWT,GL4,LAKE,GL4_5W,2018-07-17,Plecoptera chloroperlidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-17,Plecoptera chloroperlidae,0
+NWT,ALB,LAKE,ALB_1W,2018-07-19,Plecoptera chloroperlidae,0
+NWT,ALB,LAKE,ALB_2W,2018-07-19,Plecoptera chloroperlidae,0
+NWT,ALB,LAKE,ALB_3E,2018-07-19,Plecoptera chloroperlidae,0
+NWT,ALB,LAKE,ALB_4E,2018-07-19,Plecoptera chloroperlidae,0
+NWT,ALB,INLET,ALB_5IN,2018-07-19,Plecoptera chloroperlidae,0
+NWT,GL5,LAKE,GL5_1W,2018-07-31,Plecoptera chloroperlidae,0
+NWT,GL5,LAKE,GL5_2E,2018-07-31,Plecoptera chloroperlidae,0
+NWT,GL5,INLET,GL5_3IN,2018-07-31,Plecoptera chloroperlidae,0
+NWT,GL5,OUTLET,GL5_4OUT,2018-07-31,Plecoptera chloroperlidae,0
+NWT,ALB,LAKE,ALB_1W,2018-08-02,Plecoptera chloroperlidae,0
+NWT,ALB,LAKE,ALB_2W,2018-08-02,Plecoptera chloroperlidae,0
+NWT,ALB,LAKE,ALB_3E,2018-08-02,Plecoptera chloroperlidae,0
+NWT,ALB,LAKE,ALB_4E,2018-08-02,Plecoptera chloroperlidae,0
+NWT,ALB,INLET,ALB_5IN,2018-08-02,Plecoptera chloroperlidae,0
+NWT,GL4,LAKE,GL4_1E,2018-08-07,Plecoptera chloroperlidae,0
+NWT,GL4,LAKE,GL4_2E,2018-08-07,Plecoptera chloroperlidae,0
+NWT,GL4,INLET,GL4_3IN,2018-08-07,Plecoptera chloroperlidae,0
+NWT,GL4,LAKE,GL4_4W,2018-08-07,Plecoptera chloroperlidae,0
+NWT,GL4,LAKE,GL4_5W,2018-08-07,Plecoptera chloroperlidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-07,Plecoptera chloroperlidae,0
+NWT,GL1,LAKE,GL1_2E,2018-08-09,Plecoptera chloroperlidae,0
+NWT,GL1,LAKE,GL1_3E,2018-08-09,Plecoptera chloroperlidae,0
+NWT,GL1,LAKE,GL1_5W,2018-08-09,Plecoptera chloroperlidae,0
+NWT,GL1,LAKE,GL1_7W,2018-08-09,Plecoptera chloroperlidae,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-07,Plecoptera chloroperlidae,0
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-07,Plecoptera chloroperlidae,0
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Plecoptera chloroperlidae,10
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Plecoptera chloroperlidae,6
+NWT,GL4,LAKE,GL4_1E,2018-08-21,Plecoptera chloroperlidae,0
+NWT,GL4,INLET,GL4_3IN,2018-08-21,Plecoptera chloroperlidae,0
+NWT,GL4,LAKE,GL4_5W,2018-08-21,Plecoptera chloroperlidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-21,Plecoptera chloroperlidae,0
+NWT,GL4,LAKE,GL4_2E,2018-08-23,Plecoptera chloroperlidae,0
+NWT,GL4,LAKE,GL4_4W,2018-08-23,Plecoptera chloroperlidae,0
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-23,Plecoptera chloroperlidae,0
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-23,Plecoptera chloroperlidae,0
+NWT,GL1,LAKE,GL1_1E,2018-06-28,Rhynchobdellida glossiphoniidae,0
+NWT,GL1,LAKE,GL1_2E,2018-06-28,Rhynchobdellida glossiphoniidae,0
+NWT,GL1,LAKE,GL1_3E,2018-06-28,Rhynchobdellida glossiphoniidae,0
+NWT,GL1,LAKE,GL1_4E,2018-06-28,Rhynchobdellida glossiphoniidae,0
+NWT,GL1,LAKE,GL1_5W,2018-06-28,Rhynchobdellida glossiphoniidae,0
+NWT,GL1,LAKE,GL1_6W,2018-06-28,Rhynchobdellida glossiphoniidae,0
+NWT,GL1,LAKE,GL1_7W,2018-06-28,Rhynchobdellida glossiphoniidae,0
+NWT,GL4,LAKE,GL4_1E,2018-07-03,Rhynchobdellida glossiphoniidae,0
+NWT,GL4,LAKE,GL4_2E,2018-07-03,Rhynchobdellida glossiphoniidae,0
+NWT,GL4,INLET,GL4_3IN,2018-07-03,Rhynchobdellida glossiphoniidae,0
+NWT,GL4,LAKE,GL4_4W,2018-07-03,Rhynchobdellida glossiphoniidae,0
+NWT,GL4,LAKE,GL4_5W,2018-07-03,Rhynchobdellida glossiphoniidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-03,Rhynchobdellida glossiphoniidae,0
+NWT,ALB,LAKE,ALB_1W,2018-07-05,Rhynchobdellida glossiphoniidae,0
+NWT,ALB,LAKE,ALB_2W,2018-07-05,Rhynchobdellida glossiphoniidae,0
+NWT,ALB,LAKE,ALB_3E,2018-07-05,Rhynchobdellida glossiphoniidae,0
+NWT,ALB,LAKE,ALB_4E,2018-07-05,Rhynchobdellida glossiphoniidae,0
+NWT,ALB,INLET,ALB_5IN,2018-07-05,Rhynchobdellida glossiphoniidae,0
+NWT,GL1,LAKE,GL1_2E,2018-07-12,Rhynchobdellida glossiphoniidae,0
+NWT,GL1,LAKE,GL1_3E,2018-07-12,Rhynchobdellida glossiphoniidae,0
+NWT,GL1,LAKE,GL1_5W,2018-07-12,Rhynchobdellida glossiphoniidae,0
+NWT,GL1,LAKE,GL1_7W,2018-07-12,Rhynchobdellida glossiphoniidae,0
+NWT,GL4,LAKE,GL4_1E,2018-07-17,Rhynchobdellida glossiphoniidae,0
+NWT,GL4,LAKE,GL4_2E,2018-07-17,Rhynchobdellida glossiphoniidae,0
+NWT,GL4,INLET,GL4_3IN,2018-07-17,Rhynchobdellida glossiphoniidae,0
+NWT,GL4,LAKE,GL4_4W,2018-07-17,Rhynchobdellida glossiphoniidae,0
+NWT,GL4,LAKE,GL4_5W,2018-07-17,Rhynchobdellida glossiphoniidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-07-17,Rhynchobdellida glossiphoniidae,0
+NWT,ALB,LAKE,ALB_1W,2018-07-19,Rhynchobdellida glossiphoniidae,0
+NWT,ALB,LAKE,ALB_2W,2018-07-19,Rhynchobdellida glossiphoniidae,0
+NWT,ALB,LAKE,ALB_3E,2018-07-19,Rhynchobdellida glossiphoniidae,0
+NWT,ALB,LAKE,ALB_4E,2018-07-19,Rhynchobdellida glossiphoniidae,0
+NWT,ALB,INLET,ALB_5IN,2018-07-19,Rhynchobdellida glossiphoniidae,0
+NWT,GL5,LAKE,GL5_1W,2018-07-31,Rhynchobdellida glossiphoniidae,4
+NWT,GL5,LAKE,GL5_2E,2018-07-31,Rhynchobdellida glossiphoniidae,0
+NWT,GL5,INLET,GL5_3IN,2018-07-31,Rhynchobdellida glossiphoniidae,23
+NWT,GL5,OUTLET,GL5_4OUT,2018-07-31,Rhynchobdellida glossiphoniidae,0
+NWT,ALB,LAKE,ALB_1W,2018-08-02,Rhynchobdellida glossiphoniidae,0
+NWT,ALB,LAKE,ALB_2W,2018-08-02,Rhynchobdellida glossiphoniidae,0
+NWT,ALB,LAKE,ALB_3E,2018-08-02,Rhynchobdellida glossiphoniidae,0
+NWT,ALB,LAKE,ALB_4E,2018-08-02,Rhynchobdellida glossiphoniidae,0
+NWT,ALB,INLET,ALB_5IN,2018-08-02,Rhynchobdellida glossiphoniidae,0
+NWT,GL4,LAKE,GL4_1E,2018-08-07,Rhynchobdellida glossiphoniidae,1
+NWT,GL4,LAKE,GL4_2E,2018-08-07,Rhynchobdellida glossiphoniidae,0
+NWT,GL4,INLET,GL4_3IN,2018-08-07,Rhynchobdellida glossiphoniidae,0
+NWT,GL4,LAKE,GL4_4W,2018-08-07,Rhynchobdellida glossiphoniidae,0
+NWT,GL4,LAKE,GL4_5W,2018-08-07,Rhynchobdellida glossiphoniidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-07,Rhynchobdellida glossiphoniidae,0
+NWT,GL1,LAKE,GL1_2E,2018-08-09,Rhynchobdellida glossiphoniidae,0
+NWT,GL1,LAKE,GL1_3E,2018-08-09,Rhynchobdellida glossiphoniidae,13
+NWT,GL1,LAKE,GL1_5W,2018-08-09,Rhynchobdellida glossiphoniidae,1
+NWT,GL1,LAKE,GL1_7W,2018-08-09,Rhynchobdellida glossiphoniidae,4
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-07,Rhynchobdellida glossiphoniidae,65
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-07,Rhynchobdellida glossiphoniidae,5
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Rhynchobdellida glossiphoniidae,1
+NWT,ALB,CREEK,ALB_creek_aboveroad,2018-08-09,Rhynchobdellida glossiphoniidae,0
+NWT,GL4,LAKE,GL4_1E,2018-08-21,Rhynchobdellida glossiphoniidae,1
+NWT,GL4,INLET,GL4_3IN,2018-08-21,Rhynchobdellida glossiphoniidae,38
+NWT,GL4,LAKE,GL4_5W,2018-08-21,Rhynchobdellida glossiphoniidae,0
+NWT,GL4,OUTLET,GL4_6OUT,2018-08-21,Rhynchobdellida glossiphoniidae,22
+NWT,GL4,LAKE,GL4_2E,2018-08-23,Rhynchobdellida glossiphoniidae,0
+NWT,GL4,LAKE,GL4_4W,2018-08-23,Rhynchobdellida glossiphoniidae,1
+NWT,GL4,WATERFALL,GL4_waterfall_high,2018-08-23,Rhynchobdellida glossiphoniidae,63
+NWT,GL4,WATERFALL,GL4_waterfall_low,2018-08-23,Rhynchobdellida glossiphoniidae,10
