@@ -23,6 +23,7 @@ ch19.Q <- ch19 %>%
   subset(value > 0.01) %>%
   subset(doy > 120)
 range((ch19.Q$value))
+summary(ch19.Q)
 
 
 ch19.Q.plot <- ggplot(ch19.Q, aes( x= doy, y= (value), color= measurement, shape= measurement)) +
@@ -35,4 +36,13 @@ ch19.Q.plot <- ggplot(ch19.Q, aes( x= doy, y= (value), color= measurement, shape
 ggsave("ch19.Q.plot.jpeg", ch19.Q.plot, scale = 1.8, width = 10, height = 5, units = c("cm"), dpi = 500)
 
 
+ch19.cha <- ch19.Q %>% 
+  subset(measurement=="Chlorophyll" & year == 2018)
+summary((ch19.cha))
+
+chla19.Q.plot <- ggplot(ch19.cha) +
+  geom_point(aes( x=doy , y= (value)), color=(alpha(c("#457840"), 0.65))) +
+  theme_classic() + ylab("value") + 
+  geom_point(aes( x=doy , y= (Hiroba_oldchla)), color =(alpha(c("#c40a0a"), 0.65))) +
+  facet_wrap(~site) 
 
