@@ -12,7 +12,7 @@ setwd("~/Documents/Niwot LTER 2017-2019/GeneralQ/General_QAQC/2019 water quality
 WQ19 <- read.csv("water_quality_GLV19.csv")
 summary(WQ19)
 
-WQ18 <- read.csv("2018_water_quality_GLV.dm.data.csv")
+WQ18 <- read.csv("2018_water_quality_GLV.dm.data_v2.csv")
 summary(WQ18)
 
 
