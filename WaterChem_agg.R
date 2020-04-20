@@ -1,9 +1,9 @@
 ## ---------------------------
-## QA'QC for 1 C7 sensor optically formatted to measure chlorophyll-a
-##    ongoing space for aggregation of new deployment data
-##
+## QA'QC for GLV water chemistry:
+##    https://portal.edirepository.org/nis/mapbrowse?packageid=knb-lter-nwt.10.1
+## 
 ## Author: Kelly A. Loria
-## Date Created: 2020-03-19
+## Date Created: 2020-04-20
 ## Email: kelly.loria@colorado.edu
 ##
 ## ---------------------------
@@ -12,229 +12,289 @@ library(ggplot2)
 library(dplyr)
 library(lubridate)
 library(tidyverse)
-library(zoo)
-
+## ---------------------------
+# Workflow:
+#   1. Manually add in sampling time and notes, combine 2 header rows, depending 
+#      on Arikaree .xlxs report might need to manually add in more info
+#   2. Add in dection limits
+#   3. Select relevant colunms in the correct order 
+#   4. Change column names to match old output
+#   5. Check new data to see if it can be added to old data
 ## ---------------------------
 # File path setup:
-if (dir.exists('/Volumes/data/data2/rawarchive/gl4/buoy/')){
-  inputDir<- '/Volumes/data/data2/rawarchive/gl4/buoy/'
+if (dir.exists('/Users/kellyloria/Documents/Niwot\ LTER\ 2017-2019/GeneralQ/')){
+  inputDir<- '/Users/kellyloria/Documents/Niwot\ LTER\ 2017-2019/GeneralQ/'
   outputDir<- '/Users/kellyloria/Desktop/' 
 }
+
 # Don't forget to 
 #     1. Set output path to personal desktop 
 #     2. Physically move final files (pending datamanager approval) into final folder in server
 
 ## ---------------------------
-# I. Summer 2018 deployment
-old.datC7 <- read.csv(paste0(inputDir, "2018_2019/C7/1808_1907_deployment/gl4.buoy.PMEC7.data.csv"), header=T)
+# I. Read in new data: here 2019 Water Chem "WC19"
+WC19 <- read.csv(paste0(inputDir, "/WaterChem/19074_NWTLimnoReport.csv"))
+summary(WC19) # need to combine 1st 2 rows into 1 header 
 
-# 1. Fix timestamp - so it is no longer a character:
-old.datC7$timestamp1 <- as.POSIXct(old.datC7$timestamp, format= "%Y-%m-%d %H:%M")
-range(old.datC7$timestamp1)
-summary(old.datC7)
-
-# 2. Check data distribution through plots:
-qplot(timestamp1, C7_output, data = old.datC7, geom="point") +
-  #scale_x_datetime(date_breaks = "504 hour", labels = date_format("%b %d")) +
-  theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0)) 
+WC19$date1 <- as.Date.character(WC19$date, format="%m/%d/%y")
+range(WC19$date1)
 
 ## ---------------------------
-# III. Winter 2018 Deployment:
-#     C7 sensor @ 3m
+# II. Replace 0 with dection limits:
+#   * Dectection limits:   
+#       NH4+ uEQ/L == <0.50
+#       PO4 3- mg P/L == <0.0004
+#       PO4 3- uEQ/L == <0.08
+#       TDP mg P/L == <0.008
+#       IN uMOLES/L == <0.53
+#       TDP uMOLES/L == <0.04
+#       IP uMOLES/L == <0.03
 
-# 1. Read in new raw data at depth (for 2018-2019): C7_240115_180823_190723_3m.TXT
-C7.3m <- read.delim(paste0(inputDir, "2018_2019/C7/1907_1908_deployment/C7_240115_180823_190723_3m.TXT"), header=T, sep = ',')
-names(C7.3m)
-summary(C7.3m)
-
-# 2. Fix timestamp
-C7.3m$timestamp1 <- as.POSIXct(C7.3m$Mountain.Standard.Time, format="%Y-%m-%d %H:%M:%OS")
-range(C7.3m$timestamp1)
-
-# 3. Restrict for date range of deployment:
-C7.3m <- subset(C7.3m,timestamp1 >= as.POSIXct('2018-08-24 13:00:00') & 
-                  timestamp1 <= as.POSIXct('2019-07-23 00:00:00'))
-range(C7.3m$timestamp1)
-
-# 4. Plot the data:
-qplot(timestamp1, Sensor, data = C7.3m, geom="point") +
-  #scale_x_datetime(date_breaks = "504 hour", labels = date_format("%b %d")) +
-  theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0))
-
-# 5. Add in column for depth, deployment and sensor 
-C7.3m$depth <- 3
-C7.3m$deployment <- "Winter2018"
-C7.3m$sensor <- 240115
+WC19.Q=WC19 %>% 
+  mutate(NH4_uEQ_L = replace(NH4_uEQ_L, NH4_uEQ_L<0.50, '<0.50')) %>% 
+  mutate(PO4_mg_L = replace(PO4_mg_L, PO4_mg_L<0.0004, '<0.0004')) %>%
+  mutate(PO4_uEQ_L = replace(PO4_uEQ_L, PO4_uEQ_L<0.08, '<0.08')) %>%
+  mutate(TDP_mg_L = replace(TDP_mg_L, TDP_mg_L<0.008, '<0.008'))  %>%
+  mutate(IN_umol_L = replace(IN_umol_L, IN_umol_L<0.53, '<0.53')) %>%
+  mutate(TDP_umol_L = replace(TDP_umol_L, TDP_umol_L<0.04, '<0.04')) %>%
+  mutate(IP_umol_L = replace(IP_umol_L, IP_umol_L<0.03, '<0.03'))
 
 ## ---------------------------
-# IV Combine Summer2018 + Winter2018 data
+# III. Add in columns for data no longer collected 
+WC19.Q$TN <- NaN
+WC19.Q$PN <- NaN
+WC19.Q$TP <- NaN
+WC19.Q$PP <- NaN
+WC19.Q$d18O <- NaN
+WC19.Q$d18O_sdev <- NaN
+WC19.Q$dDeut <- NaN
+WC19.Q$dD_sdev <- NaN
+WC19.Q$D_excess <- NaN
+WC19.Q$Trit <- NaN
+WC19.Q$T_sdev <- NaN
+WC19.Q$TOC <- NaN
+WC19.Q$POC <- NaN
 
-# 1. Add in column for year 
-PME_C7_winter18 <- transform(C7.3m,
-                             year = as.numeric(format(timestamp1, '%Y')))
+WC19.Q1 <- subset(WC19.Q, select=c(LTER_site, local_site, location, depth, year, date1,
+                                   time, pH, COND_uS_cm, ANC_uEQ_L, H_uEQ_L, NH4_uEQ_L,
+                                   Ca_uEQ, Mg_uEQ_L, Na_uEQ_L, K_uEQ_L, Cl_uEQ_L, NO3_uEQ_L,
+                                   SO4_uEQ_L, PO4_uEQ_L, Si_umol_L, cat_sum, an_sum, chg_bal,
+                                   TN, TDN_umol_L, PN, DON_umol_L, IN_umol_L, TP, TDP_umol_L, 
+                                   PP, DOP_umol_L, IP_umol_L, d18O, d18O_sdev, dDeut, dD_sdev,
+                                   D_excess, Trit, T_sdev, TOC, DOC_mg_L, POC, comments))
 
-# 2. Select for relevant parameters
-old.datC7_1 <- subset(old.datC7, select=c(sensor, deployment, year, timestamp1, depth,
-                                          temperature, C7_output, gain,
-                                          battery))
+# Change names
+colnames(WC19.Q1)[6] = "date"
+colnames(WC19.Q1)[9] = "conduct"
+colnames(WC19.Q1)[10] = "ANC"
+colnames(WC19.Q1)[11] = "H.plus."
+colnames(WC19.Q1)[12] = "NH4.plus."
+colnames(WC19.Q1)[13] = "Ca.plus..plus."
+colnames(WC19.Q1)[14] = "Mg.plus..plus."
+colnames(WC19.Q1)[15] = "Na.plus."
+colnames(WC19.Q1)[16] = "K.plus."
+colnames(WC19.Q1)[17] = "Cl.hyphen."
+colnames(WC19.Q1)[18] = "NO3.hyphen."
+colnames(WC19.Q1)[19] = "SO4.hyphen..hyphen."
+colnames(WC19.Q1)[20] = "PO4.hyphen..hyphen..hyphen."
+colnames(WC19.Q1)[21] = "Si" 
+colnames(WC19.Q1)[26] = "TDN"
+colnames(WC19.Q1)[28] = "DON"
+colnames(WC19.Q1)[29] = "IN"
+colnames(WC19.Q1)[31] = "TDP"
+colnames(WC19.Q1)[33] = "DOP"
+colnames(WC19.Q1)[34] = "IP"
+colnames(WC19.Q1)[43] = "DOC"
 
-# 3. Select for relevant parameters
-PME_C7_winter18_1 <- subset(PME_C7_winter18, select=c(sensor, deployment, year, timestamp1, depth,
-                                                      Temperature, Sensor, Gain,
-                                                      Battery))
-# 4. Change names of column to match data
-colnames(PME_C7_winter18_1)[6] = "temperature"
-colnames(PME_C7_winter18_1)[7] = "C7_output"
-colnames(PME_C7_winter18_1)[8] = "gain"
-colnames(PME_C7_winter18_1)[10] = "battery"
-
-# 5. Add winter 2018 to summer 2018
-PME_C7_agg18 <- rbind(old.datC7_1, PME_C7_winter18_1)
-summary(PME_C7_agg18)
-
-# 6. Plot and facet by deployment:
-p <- ggplot(PME_C7_agg18, aes(x=timestamp1, y=(C7_output), colour =as.factor(deployment))) + # can swap color for deployment too 
-  geom_point(alpha = 0.5) +
-  #stat_smooth(method="lm", se=TRUE, formula=y ~ poly(x, 3, raw=TRUE), alpha=0.15) +
-  theme_classic() + xlab("Time stamp") 
-
-
-## ---------------------------
-# V. Summer 2019 Deployment
-
-# 1. Read in data:
-C7.9m <- read.delim(paste0(inputDir, "2018_2019/C7/1907_1908_deployment/C7_240115_190730_190820_9m.TXT"), header=T, sep = ',')
-
-# 2. Fix timestamp
-C7.9m$timestamp1 <- as.POSIXct(C7.9m$Mountain.Standard.Time, format="%Y-%m-%d %H:%M:%OS")
-range(C7.9m$timestamp1)
-
-# 3. Restrict for date range
-C7.9m <- subset(C7.9m,timestamp1 >= as.POSIXct('2019-07-30 12:00:00') & 
-                  timestamp1 <= as.POSIXct('2019-08-20 00:00:00'))
-
-# 4. Plot the data:
-qplot(timestamp1, Sensor, data = C7.9m, geom="point") +
-  #scale_x_datetime(date_breaks = "504 hour", labels = date_format("%b %d")) +
-  theme(axis.text.x = element_text(angle = 25, vjust = 1.0, hjust = 1.0))
-
-# 5. Compare C7 output with chl-a extraction values. 
-#       Need to extract just dates from timestamps and then restrict for morining sampling
-C7.9m <- transform(C7.9m, ndate = as.Date(timestamp1))
-C7.9m.1 <- with(C7.9m, C7.9m[hour(timestamp1)>= 10 & hour(timestamp1) < 12 , ] )
-
-# 6. Add in column for depth, deployment and sensor 
-C7.9m$depth <- 9
-C7.9m$deployment <- "Summer2019"
-C7.9m$sensor <- 240115
+# write.csv(WC19.Q1, paste0(outputDir, "Summer2019_GLVWaterChem.csv")) # complied data file of all DO sensors along buoy line
 
 ## ---------------------------
-# VI. All C7 data + Summer2019 data
+# IV. Check to see if the new data fits with old:
+# Read in old data:
+inUrl1  <- "https://pasta.lternet.edu/package/data/eml/knb-lter-nwt/10/1/454485276bd5ee8d4a8a5e30a71853a7" 
+infile1 <- tempfile()
+download.file(inUrl1,infile1,method="curl")
 
-# 1. Add in variable for year: 
-PME_C7_summer2019 <- transform(C7.9m,
-                               year = as.numeric(format(timestamp1, '%Y')))
-names(PME_C7_summer2019)
-names(PME_C7_summer2019)
+dt1 <-read.csv(infile1,header=F 
+               ,skip=1
+               ,sep=","  
+               ,quot='"' 
+               , col.names=c(
+                 "LTER_site",     
+                 "local_site",     
+                 "location",     
+                 "depth",     
+                 "year",     
+                 "date",     
+                 "time",     
+                 "pH",     
+                 "conduct",     
+                 "ANC",     
+                 "H.plus.",     
+                 "NH4.plus.",     
+                 "Ca.plus..plus.",     
+                 "Mg.plus..plus.",     
+                 "Na.plus.",     
+                 "K.plus.",     
+                 "Cl.hyphen.",     
+                 "NO3.hyphen.",     
+                 "SO4.hyphen..hyphen.",     
+                 "PO4.hyphen..hyphen..hyphen.",     
+                 "Si",     
+                 "cat_sum",     
+                 "an_sum",     
+                 "chg_bal",     
+                 "TN",     
+                 "TDN",     
+                 "PN",     
+                 "DON",     
+                 "IN",     
+                 "TP",     
+                 "TDP",     
+                 "PP",     
+                 "DOP",     
+                 "IP",     
+                 "d18O",     
+                 "d18O_sdev",     
+                 "dDeut",     
+                 "dD_sdev",     
+                 "D_excess",     
+                 "Trit",     
+                 "T_sdev",     
+                 "TOC",     
+                 "DOC",     
+                 "POC",     
+                 "comments"    ), check.names=TRUE)
 
-# 2. Select for relevant parameters
-PME_C7_summer2019_1 <- subset(PME_C7_summer2019, select=c(sensor, deployment, year, timestamp1, depth,
-                                                          Temperature, Sensor, Gain,
-                                                          Battery))
+# Fix any interval or ratio columns mistakenly read in as nominal and nominal columns read as numeric or dates read as strings
+if (class(dt1$LTER_site)!="factor") dt1$LTER_site<- as.factor(dt1$LTER_site)
+if (class(dt1$local_site)!="factor") dt1$local_site<- as.factor(dt1$local_site)
+if (class(dt1$location)!="factor") dt1$location<- as.factor(dt1$location)
+if (class(dt1$depth)=="factor") dt1$depth <-as.numeric(levels(dt1$depth))[as.integer(dt1$depth) ]                                   
+# attempting to convert dt1$date dateTime string to R date structure (date or POSIXct)                                
+tmpDateFormat<-"%Y-%m-%d"
+tmp1date<-as.Date(dt1$date,format=tmpDateFormat)
+# Keep the new dates only if they all converted correctly
+if(length(tmp1date) == length(tmp1date[!is.na(tmp1date)])){dt1$date <- tmp1date } else {print("Date conversion failed for dt1$date. Please inspect the data and do the date conversion yourself.")}                                                                    
+rm(tmpDateFormat,tmp1date) 
+if (class(dt1$pH)=="factor") dt1$pH <-as.numeric(levels(dt1$pH))[as.integer(dt1$pH) ]
+if (class(dt1$conduct)=="factor") dt1$conduct <-as.numeric(levels(dt1$conduct))[as.integer(dt1$conduct) ]
+if (class(dt1$ANC)=="factor") dt1$ANC <-as.numeric(levels(dt1$ANC))[as.integer(dt1$ANC) ]
+if (class(dt1$H.plus.)=="factor") dt1$H.plus. <-as.numeric(levels(dt1$H.plus.))[as.integer(dt1$H.plus.) ]
+if (class(dt1$NH4.plus.)=="factor") dt1$NH4.plus. <-as.numeric(levels(dt1$NH4.plus.))[as.integer(dt1$NH4.plus.) ]
+if (class(dt1$Ca.plus..plus.)=="factor") dt1$Ca.plus..plus. <-as.numeric(levels(dt1$Ca.plus..plus.))[as.integer(dt1$Ca.plus..plus.) ]
+if (class(dt1$Mg.plus..plus.)=="factor") dt1$Mg.plus..plus. <-as.numeric(levels(dt1$Mg.plus..plus.))[as.integer(dt1$Mg.plus..plus.) ]
+if (class(dt1$Na.plus.)=="factor") dt1$Na.plus. <-as.numeric(levels(dt1$Na.plus.))[as.integer(dt1$Na.plus.) ]
+if (class(dt1$K.plus.)=="factor") dt1$K.plus. <-as.numeric(levels(dt1$K.plus.))[as.integer(dt1$K.plus.) ]
+if (class(dt1$Cl.hyphen.)=="factor") dt1$Cl.hyphen. <-as.numeric(levels(dt1$Cl.hyphen.))[as.integer(dt1$Cl.hyphen.) ]
+if (class(dt1$NO3.hyphen.)=="factor") dt1$NO3.hyphen. <-as.numeric(levels(dt1$NO3.hyphen.))[as.integer(dt1$NO3.hyphen.) ]
+if (class(dt1$SO4.hyphen..hyphen.)=="factor") dt1$SO4.hyphen..hyphen. <-as.numeric(levels(dt1$SO4.hyphen..hyphen.))[as.integer(dt1$SO4.hyphen..hyphen.) ]
+if (class(dt1$PO4.hyphen..hyphen..hyphen.)=="factor") dt1$PO4.hyphen..hyphen..hyphen. <-as.numeric(levels(dt1$PO4.hyphen..hyphen..hyphen.))[as.integer(dt1$PO4.hyphen..hyphen..hyphen.) ]
+if (class(dt1$Si)=="factor") dt1$Si <-as.numeric(levels(dt1$Si))[as.integer(dt1$Si) ]
+if (class(dt1$cat_sum)=="factor") dt1$cat_sum <-as.numeric(levels(dt1$cat_sum))[as.integer(dt1$cat_sum) ]
+if (class(dt1$an_sum)=="factor") dt1$an_sum <-as.numeric(levels(dt1$an_sum))[as.integer(dt1$an_sum) ]
+if (class(dt1$chg_bal)=="factor") dt1$chg_bal <-as.numeric(levels(dt1$chg_bal))[as.integer(dt1$chg_bal) ]
+if (class(dt1$TN)=="factor") dt1$TN <-as.numeric(levels(dt1$TN))[as.integer(dt1$TN) ]
+if (class(dt1$TDN)=="factor") dt1$TDN <-as.numeric(levels(dt1$TDN))[as.integer(dt1$TDN) ]
+if (class(dt1$PN)=="factor") dt1$PN <-as.numeric(levels(dt1$PN))[as.integer(dt1$PN) ]
+if (class(dt1$DON)=="factor") dt1$DON <-as.numeric(levels(dt1$DON))[as.integer(dt1$DON) ]
+if (class(dt1$IN)=="factor") dt1$IN <-as.numeric(levels(dt1$IN))[as.integer(dt1$IN) ]
+if (class(dt1$TP)=="factor") dt1$TP <-as.numeric(levels(dt1$TP))[as.integer(dt1$TP) ]
+if (class(dt1$TDP)=="factor") dt1$TDP <-as.numeric(levels(dt1$TDP))[as.integer(dt1$TDP) ]
+if (class(dt1$PP)=="factor") dt1$PP <-as.numeric(levels(dt1$PP))[as.integer(dt1$PP) ]
+if (class(dt1$DOP)=="factor") dt1$DOP <-as.numeric(levels(dt1$DOP))[as.integer(dt1$DOP) ]
+if (class(dt1$IP)=="factor") dt1$IP <-as.numeric(levels(dt1$IP))[as.integer(dt1$IP) ]
+if (class(dt1$d18O)=="factor") dt1$d18O <-as.numeric(levels(dt1$d18O))[as.integer(dt1$d18O) ]
+if (class(dt1$d18O_sdev)=="factor") dt1$d18O_sdev <-as.numeric(levels(dt1$d18O_sdev))[as.integer(dt1$d18O_sdev) ]
+if (class(dt1$dDeut)=="factor") dt1$dDeut <-as.numeric(levels(dt1$dDeut))[as.integer(dt1$dDeut) ]
+if (class(dt1$dD_sdev)=="factor") dt1$dD_sdev <-as.numeric(levels(dt1$dD_sdev))[as.integer(dt1$dD_sdev) ]
+if (class(dt1$D_excess)=="factor") dt1$D_excess <-as.numeric(levels(dt1$D_excess))[as.integer(dt1$D_excess) ]
+if (class(dt1$Trit)=="factor") dt1$Trit <-as.numeric(levels(dt1$Trit))[as.integer(dt1$Trit) ]
+if (class(dt1$T_sdev)=="factor") dt1$T_sdev <-as.numeric(levels(dt1$T_sdev))[as.integer(dt1$T_sdev) ]
+if (class(dt1$TOC)=="factor") dt1$TOC <-as.numeric(levels(dt1$TOC))[as.integer(dt1$TOC) ]
+if (class(dt1$DOC)=="factor") dt1$DOC <-as.numeric(levels(dt1$DOC))[as.integer(dt1$DOC) ]
+if (class(dt1$POC)=="factor") dt1$POC <-as.numeric(levels(dt1$POC))[as.integer(dt1$POC) ]
+if (class(dt1$comments)!="factor") dt1$comments<- as.factor(dt1$comments)
 
-# 3. change names
-colnames(PME_C7_summer2019_1)[6] = "temperature"
-colnames(PME_C7_summer2019_1)[7] = "C7_output"
-colnames(PME_C7_summer2019_1)[8] = "gain"
-colnames(PME_C7_summer2019_1)[10] = "battery"
+# Convert Missing Values to NA for non-dates
+dt1$pH <- ifelse((trimws(as.character(dt1$pH))==trimws("NP")),NA,dt1$pH)
+dt1$pH <- ifelse((trimws(as.character(dt1$pH))==trimws("QNS")),NA,dt1$pH)
+dt1$conduct <- ifelse((trimws(as.character(dt1$conduct))==trimws("NP")),NA,dt1$conduct)
+dt1$ANC <- ifelse((trimws(as.character(dt1$ANC))==trimws("NP")),NA,dt1$ANC)
+dt1$ANC <- ifelse((trimws(as.character(dt1$ANC))==trimws("QNS")),NA,dt1$ANC)
+dt1$H.plus. <- ifelse((trimws(as.character(dt1$H.plus.))==trimws("NP")),NA,dt1$H.plus.)
+dt1$H.plus. <- ifelse((trimws(as.character(dt1$H.plus.))==trimws("QNS")),NA,dt1$H.plus.)
+dt1$NH4.plus. <- ifelse((trimws(as.character(dt1$NH4.plus.))==trimws("NP")),NA,dt1$NH4.plus.)
+dt1$NH4.plus. <- ifelse((trimws(as.character(dt1$NH4.plus.))==trimws("<0.38")),NA,dt1$NH4.plus.)
+dt1$NH4.plus. <- ifelse((trimws(as.character(dt1$NH4.plus.))==trimws("<0.40")),NA,dt1$NH4.plus.)
+dt1$NH4.plus. <- ifelse((trimws(as.character(dt1$NH4.plus.))==trimws("<0.22")),NA,dt1$NH4.plus.)
+dt1$NH4.plus. <- ifelse((trimws(as.character(dt1$NH4.plus.))==trimws("u")),NA,dt1$NH4.plus.)
+dt1$Ca.plus..plus. <- ifelse((trimws(as.character(dt1$Ca.plus..plus.))==trimws("NP")),NA,dt1$Ca.plus..plus.)
+dt1$Ca.plus..plus. <- ifelse((trimws(as.character(dt1$Ca.plus..plus.))==trimws("QNS")),NA,dt1$Ca.plus..plus.)
+dt1$Mg.plus..plus. <- ifelse((trimws(as.character(dt1$Mg.plus..plus.))==trimws("NP")),NA,dt1$Mg.plus..plus.)
+dt1$Mg.plus..plus. <- ifelse((trimws(as.character(dt1$Mg.plus..plus.))==trimws("QNS")),NA,dt1$Mg.plus..plus.)
+dt1$Na.plus. <- ifelse((trimws(as.character(dt1$Na.plus.))==trimws("NP")),NA,dt1$Na.plus.)
+dt1$Na.plus. <- ifelse((trimws(as.character(dt1$Na.plus.))==trimws("QNS")),NA,dt1$Na.plus.)
+dt1$K.plus. <- ifelse((trimws(as.character(dt1$K.plus.))==trimws("NP")),NA,dt1$K.plus.)
+dt1$K.plus. <- ifelse((trimws(as.character(dt1$K.plus.))==trimws("QNS")),NA,dt1$K.plus.)
+dt1$Cl.hyphen. <- ifelse((trimws(as.character(dt1$Cl.hyphen.))==trimws("NP")),NA,dt1$Cl.hyphen.)
+dt1$NO3.hyphen. <- ifelse((trimws(as.character(dt1$NO3.hyphen.))==trimws("NP")),NA,dt1$NO3.hyphen.)
+dt1$NO3.hyphen. <- ifelse((trimws(as.character(dt1$NO3.hyphen.))==trimws("u")),NA,dt1$NO3.hyphen.)
+dt1$SO4.hyphen..hyphen. <- ifelse((trimws(as.character(dt1$SO4.hyphen..hyphen.))==trimws("NP")),NA,dt1$SO4.hyphen..hyphen.)
+dt1$PO4.hyphen..hyphen..hyphen. <- ifelse((trimws(as.character(dt1$PO4.hyphen..hyphen..hyphen.))==trimws("NP")),NA,dt1$PO4.hyphen..hyphen..hyphen.)
+dt1$PO4.hyphen..hyphen..hyphen. <- ifelse((trimws(as.character(dt1$PO4.hyphen..hyphen..hyphen.))==trimws("<0.06")),NA,dt1$PO4.hyphen..hyphen..hyphen.)
+dt1$PO4.hyphen..hyphen..hyphen. <- ifelse((trimws(as.character(dt1$PO4.hyphen..hyphen..hyphen.))==trimws("<0.05")),NA,dt1$PO4.hyphen..hyphen..hyphen.)
+dt1$PO4.hyphen..hyphen..hyphen. <- ifelse((trimws(as.character(dt1$PO4.hyphen..hyphen..hyphen.))==trimws("u")),NA,dt1$PO4.hyphen..hyphen..hyphen.)
+dt1$Si <- ifelse((trimws(as.character(dt1$Si))==trimws("NP")),NA,dt1$Si)
+dt1$cat_sum <- ifelse((trimws(as.character(dt1$cat_sum))==trimws("NP")),NA,dt1$cat_sum)
+dt1$cat_sum <- ifelse((trimws(as.character(dt1$cat_sum))==trimws("QNS")),NA,dt1$cat_sum)
+dt1$an_sum <- ifelse((trimws(as.character(dt1$an_sum))==trimws("NP")),NA,dt1$an_sum)
+dt1$an_sum <- ifelse((trimws(as.character(dt1$an_sum))==trimws("QNS")),NA,dt1$an_sum)
+dt1$chg_bal <- ifelse((trimws(as.character(dt1$chg_bal))==trimws("NP")),NA,dt1$chg_bal)
+dt1$chg_bal <- ifelse((trimws(as.character(dt1$chg_bal))==trimws("QNS")),NA,dt1$chg_bal)
+dt1$TN <- ifelse((trimws(as.character(dt1$TN))==trimws("NP")),NA,dt1$TN)
+dt1$TN <- ifelse((trimws(as.character(dt1$TN))==trimws("QNS")),NA,dt1$TN)
+dt1$TDN <- ifelse((trimws(as.character(dt1$TDN))==trimws("NP")),NA,dt1$TDN)
+dt1$TDN <- ifelse((trimws(as.character(dt1$TDN))==trimws("EQCL")),NA,dt1$TDN)
+dt1$PN <- ifelse((trimws(as.character(dt1$PN))==trimws("NP")),NA,dt1$PN)
+dt1$PN <- ifelse((trimws(as.character(dt1$PN))==trimws("u")),NA,dt1$PN)
+dt1$PN <- ifelse((trimws(as.character(dt1$PN))==trimws("QNS")),NA,dt1$PN)
+dt1$DON <- ifelse((trimws(as.character(dt1$DON))==trimws("NP")),NA,dt1$DON)
+dt1$DON <- ifelse((trimws(as.character(dt1$DON))==trimws("u")),NA,dt1$DON)
+dt1$DON <- ifelse((trimws(as.character(dt1$DON))==trimws("EQCL")),NA,dt1$DON)
+dt1$IN <- ifelse((trimws(as.character(dt1$IN))==trimws("NP")),NA,dt1$IN)
+dt1$IN <- ifelse((trimws(as.character(dt1$IN))==trimws("u")),NA,dt1$IN)
+dt1$TP <- ifelse((trimws(as.character(dt1$TP))==trimws("NP")),NA,dt1$TP)
+dt1$TP <- ifelse((trimws(as.character(dt1$TP))==trimws("u")),NA,dt1$TP)
+dt1$TP <- ifelse((trimws(as.character(dt1$TP))==trimws("QNS")),NA,dt1$TP)
+dt1$TDP <- ifelse((trimws(as.character(dt1$TDP))==trimws("NP")),NA,dt1$TDP)
+dt1$TDP <- ifelse((trimws(as.character(dt1$TDP))==trimws("<0.04")),NA,dt1$TDP)
+dt1$TDP <- ifelse((trimws(as.character(dt1$TDP))==trimws("<0.01")),NA,dt1$TDP)
+dt1$TDP <- ifelse((trimws(as.character(dt1$TDP))==trimws("u")),NA,dt1$TDP)
+dt1$PP <- ifelse((trimws(as.character(dt1$PP))==trimws("NP")),NA,dt1$PP)
+dt1$PP <- ifelse((trimws(as.character(dt1$PP))==trimws("u")),NA,dt1$PP)
+dt1$PP <- ifelse((trimws(as.character(dt1$PP))==trimws("QNS")),NA,dt1$PP)
+dt1$DOP <- ifelse((trimws(as.character(dt1$DOP))==trimws("NP")),NA,dt1$DOP)
+dt1$DOP <- ifelse((trimws(as.character(dt1$DOP))==trimws("u")),NA,dt1$DOP)
+dt1$DOP <- ifelse((trimws(as.character(dt1$DOP))==trimws("EQCL")),NA,dt1$DOP)
+dt1$IP <- ifelse((trimws(as.character(dt1$IP))==trimws("NP")),NA,dt1$IP)
+dt1$IP <- ifelse((trimws(as.character(dt1$IP))==trimws("<0.02")),NA,dt1$IP)
+dt1$IP <- ifelse((trimws(as.character(dt1$IP))==trimws("<0.05")),NA,dt1$IP)
+dt1$IP <- ifelse((trimws(as.character(dt1$IP))==trimws("u")),NA,dt1$IP)
+dt1$d18O <- ifelse((trimws(as.character(dt1$d18O))==trimws("NP")),NA,dt1$d18O)
+dt1$d18O_sdev <- ifelse((trimws(as.character(dt1$d18O_sdev))==trimws("NP")),NA,dt1$d18O_sdev)
+dt1$dDeut <- ifelse((trimws(as.character(dt1$dDeut))==trimws("NP")),NA,dt1$dDeut)
+dt1$dD_sdev <- ifelse((trimws(as.character(dt1$dD_sdev))==trimws("NP")),NA,dt1$dD_sdev)
+dt1$D_excess <- ifelse((trimws(as.character(dt1$D_excess))==trimws("NP")),NA,dt1$D_excess)
+dt1$Trit <- ifelse((trimws(as.character(dt1$Trit))==trimws("NP")),NA,dt1$Trit)
+dt1$T_sdev <- ifelse((trimws(as.character(dt1$T_sdev))==trimws("NP")),NA,dt1$T_sdev)
+dt1$TOC <- ifelse((trimws(as.character(dt1$TOC))==trimws("NP")),NA,dt1$TOC)
+dt1$DOC <- ifelse((trimws(as.character(dt1$DOC))==trimws("NP")),NA,dt1$DOC)
+dt1$POC <- ifelse((trimws(as.character(dt1$POC))==trimws("NP")),NA,dt1$POC)
+dt1$POC <- ifelse((trimws(as.character(dt1$POC))==trimws("u")),NA,dt1$POC)
+dt1$POC <- ifelse((trimws(as.character(dt1$POC))==trimws("EQCL")),NA,dt1$POC)
+dt1$comments <- as.factor(ifelse((trimws(as.character(dt1$comments))==trimws("NaN")),NA,as.character(dt1$comments)))
 
-# 4. Add winter 2018 to summer 2018
-PME_C7_agg19 <- rbind(PME_C7_agg18, PME_C7_summer2019_1)
-summary(PME_C7_agg19)
-
-# 5. Fix column names
-colnames(PME_C7_agg19)[4] = "timestamp"
-
-# 6. Plot and facet by deployment:
-p <- ggplot(PME_C7_agg19, aes(x=timestamp, y=(C7_output), colour =as.factor(depth))) +
-  geom_point(alpha = 0.5)  +
-  theme_classic() + xlab("Time stamp")
-
-## ---------------------------
-# VII. Final QA'QC for temperature
-
-# 1. Remove all the temperature values out of range 0-35 degreeC
-#PME_C7_agg19 <- subset(PME_C7_agg19, temperature >= 0)
-
-# 2. Flag temperature adn C7 values:
-PME_C7_agg19.Q=PME_C7_agg19 %>% 
-  mutate(temperature=ifelse(temperature>35, NA, temperature)) %>%
-  mutate(hour=lubridate::hour(timestamp))%>%
-  arrange(deployment, depth, timestamp)%>%
-  group_by(deployment, depth, hour)%>% #this will get the nearest 15, but could be fewer if some are missing OR >35C, I think (?) the 35 are bogus so that is ok but you could
-  mutate(mnT=rollapply(temperature, width = 15, FUN = mean, fill=NA),           # also filter out the NAs and >35s if you wanted to always have 15 values in your rolling window after removing bad values
-         sdT=rollapply(temperature, width = 15, FUN = sd, fill=NA)) %>%
-  mutate(loT=mnT- (3*sdT), hiT=mnT+ (3*sdT))%>%
-  mutate(mnC7=rollapply(C7_output, width = 15, FUN = mean, fill=NA),
-         sdC7=rollapply(C7_output, width = 15, FUN = sd, fill=NA)) %>%
-  mutate(loC7=mnC7- (3*sdC7), hiC7=mnC7+ (3*sdC7))%>%
-  full_join(., PME_C7_agg19)%>% #then use case_when to sort the final flags
-  mutate(
-    flag_temperature=
-      case_when( #may as well add the m in here since your metadata days that flag was used
-        is.na(temperature) ~ 'm',
-        temperature>35 ~ 'q',
-        temperature<loT&!is.na(loT) ~ 'o',
-        temperature>hiT&!is.na(hiT) ~ 'o',
-        temperature<0 ~ 'q', TRUE ~ 'n')) %>%
-  mutate(
-    flag_C7=
-      case_when( #may as well add the m in here since your metadata days that flag was used
-        C7_output<loC7&!is.na(loC7) ~ 'o',
-        C7_output>hiC7&!is.na(hiC7) ~ 'o', 
-        timestamp <= as.POSIXct('2018-07-29 00:00:00') ~ 'q', TRUE ~ 'n')) %>%
-  mutate(
-    flag_battery=
-      case_when( 
-        battery<1.5 ~ 'q', TRUE ~ 'n'))
-
-# 3.Check the flag 
-p <- ggplot(PME_C7_agg19.Q, aes(x=timestamp, y=(C7_output), colour =as.factor(flag_C7), shape= deployment)) +
-  geom_point(alpha = 0.7)  +
-  theme_classic() #+ facet_wrap(~flag_temperature)
-
-# 4. Remove unwanted variables:
-PME_C7_agg19.Q2 <- subset(PME_C7_agg19.Q, select=c(sensor, deployment, year, timestamp, depth,
-                                                   temperature, C7_output, gain,
-                                                   battery, flag_temperature, flag_C7, flag_battery))
-
-#   5. Double chec for duplicated values:
-PME_C7_agg19.Q2%>%select(deployment, timestamp, depth)%>%duplicated()%>%sum() # 2 dups
-
-View(PME_C7_agg19.Q2%>%
-       inner_join(
-         PME_C7_agg19.Q2 %>%
-           group_by(deployment, timestamp, depth) %>%
-           summarize(ct=dplyr::n())%>% filter(ct>1)))
-
-# Remove values:
-PME_C7_agg19.Q3 = PME_C7_agg19.Q2 %>%
-  distinct(deployment, timestamp, depth, .keep_all = TRUE)
-
-PME_C7_agg19.Q3%>%select(deployment, timestamp, depth)%>%duplicated()%>%sum() 
-
-# 5. Export and save data:
-# write.csv(PME_C7_agg19.Q3, paste0(outputDir, "Summer2019_PME_C7.csv")) # complied data file of all DO sensors along buoy line
-
-
-#TEST TEST
-
-
-## ---------------------------
-# VIII. End notes:
-#   * NWT flgging codes:
-#       n=no flag; m=missing; q=questionable; e=estimated; o=outlier
-#
-#   * Back ground information for users:
-#       link to product mannual: https://www.turnerdesigns.com/cyclops-7f-submersible-fluorometer?lightbox=dataItem-jd6b16b81
-#       And here: https://www.pme.com/wp-content/uploads/2014/07/Manual1.pdf
+# Merge new data with the old:
+WCtest <- rbind(dt1, WC19.Q1)
+summary(WCtest)
