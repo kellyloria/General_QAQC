@@ -40,7 +40,7 @@ WC19$date1 <- as.Date.character(WC19$date, format="%m/%d/%y")
 range(WC19$date1)
 
 ## ---------------------------
-# II. Replace 0 with dection limits:
+# 2. Replace 0 with dection limits:
 #   * Dectection limits:   
 #       NH4+ uEQ/L == <0.50
 #       PO4 3- mg P/L == <0.0004
@@ -57,10 +57,15 @@ WC19.Q=WC19 %>%
   mutate(TDP_mg_L = replace(TDP_mg_L, TDP_mg_L<0.008, '<0.008'))  %>%
   mutate(IN_umol_L = replace(IN_umol_L, IN_umol_L<0.53, '<0.53')) %>%
   mutate(TDP_umol_L = replace(TDP_umol_L, TDP_umol_L<0.04, '<0.04')) %>%
-  mutate(IP_umol_L = replace(IP_umol_L, IP_umol_L<0.03, '<0.03'))
+  mutate(IP_umol_L = replace(IP_umol_L, IP_umol_L<0.03, '<0.03'))  %>%
+  mutate(NO3_mg_L = replace(NO3_mg_L, NO3_mg_L<0.02, '<0.02')) %>% # MDL based off mg/L
+  mutate(TDN_mg_L = replace(TDN_mg_L, TDN_mg_L<0.008, '<0.008')) %>% # MDL based off mg/L
+  mutate(DOP_umol_L = replace(DOP_umol_L, DOP_umol_L<0.0008, '<0.0008'))
+view(WC19.Q)
+  
 
 ## ---------------------------
-# III. Add in columns for data no longer collected 
+# 3. Add in columns for data no longer collected 
 WC19.Q$TN <- NaN
 WC19.Q$PN <- NaN
 WC19.Q$TP <- NaN
@@ -109,7 +114,7 @@ colnames(WC19.Q1)[43] = "DOC"
 # write.csv(WC19.Q1, paste0(outputDir, "Summer2019_GLVWaterChem.csv")) # complied data file of all DO sensors along buoy line
 
 ## ---------------------------
-# IV. Check to see if the new data fits with old:
+# II. Check to see if the new data fits with old:
 # Read in old data:
 inUrl1  <- "https://pasta.lternet.edu/package/data/eml/knb-lter-nwt/10/1/454485276bd5ee8d4a8a5e30a71853a7" 
 infile1 <- tempfile()
@@ -294,7 +299,226 @@ dt1$POC <- ifelse((trimws(as.character(dt1$POC))==trimws("NP")),NA,dt1$POC)
 dt1$POC <- ifelse((trimws(as.character(dt1$POC))==trimws("u")),NA,dt1$POC)
 dt1$POC <- ifelse((trimws(as.character(dt1$POC))==trimws("EQCL")),NA,dt1$POC)
 dt1$comments <- as.factor(ifelse((trimws(as.character(dt1$comments))==trimws("NaN")),NA,as.character(dt1$comments)))
+summary(dt1)
+
+dt1.Q=dt1 %>% 
+  mutate(NH4.plus. = replace(NH4.plus., NH4.plus.<0.50, '<0.50')) %>% 
+  mutate(PO4.hyphen..hyphen..hyphen. = replace(PO4.hyphen..hyphen..hyphen., PO4.hyphen..hyphen..hyphen.<0.08, '<0.08')) %>%
+  mutate(IN = replace(IN, IN<0.53, '<0.53')) %>%
+  mutate(TDP = replace(TDP, TDP<0.04, '<0.04')) %>%
+  mutate(IP = replace(IP, IP<0.03, '<0.03'))  %>%
+  mutate(DOP = replace(DOP, DOP<0.0008, '<0.0008'))
+# write.csv(dt1.Q, paste0(outputDir, "OLD_GLVWaterChem.csv")) # complied data file of all DO sensors along buoy line
 
 # Merge new data with the old:
 WCtest <- rbind(dt1, WC19.Q1)
 summary(WCtest)
+
+WCtest.plot <- ggplot(WCtest) +
+  geom_point(aes( x=date , y= (pH)), color=(alpha(c("#457840"), 0.65))) +
+  theme_classic() +
+  facet_wrap(~year) 
+
+## ---------------------------
+# III. Fix 2017 data which was also missing 
+
+WC17 <- read.csv(paste0(inputDir, "/WaterChem/17DMGL4_Done.csv"))
+summary(WC17)
+
+WC17$date1 <- as.Date.character(WC17$date, format="%m/%d/%y")
+range(WC17$date1)
+
+
+## ---------------------------
+# 1. Replace 0 with dection limits:
+#   * Dectection limits:   
+#       NH4+ uEQ/L == <0.50
+#       PO4 3- mg P/L == <0.0004
+#       PO4 3- uEQ/L == <0.08
+#       TDP mg P/L == <0.008
+#       IN uMOLES/L == <0.53
+#       TDP uMOLES/L == <0.04
+#       IP uMOLES/L == <0.03
+
+WC17.Q=WC17 %>% 
+  mutate(NH4_uEQ_L = replace(NH4_uEQ_L, NH4_uEQ_L<0.50, '<0.50')) %>% 
+  mutate(PO4_mg_L = replace(PO4_mg_L, PO4_mg_L<0.0004, '<0.0004')) %>%
+  mutate(PO4_uEQ_L = replace(PO4_uEQ_L, PO4_uEQ_L<0.08, '<0.08')) %>%
+  mutate(TDP_mg_L = replace(TDP_mg_L, TDP_mg_L<0.008, '<0.008'))  %>%
+  mutate(IN_umol_L = replace(IN_umol_L, IN_umol_L<0.53, '<0.53')) %>%
+  mutate(TDP_umol_L = replace(TDP_umol_L, TDP_umol_L<0.04, '<0.04')) %>%
+  mutate(IP_umol_L = replace(IP_umol_L, IP_umol_L<0.03, '<0.03'))  %>%
+  #mutate(NO3_mg_L = replace(NO3_mg_L, NO3_mg_L<0.02, '<0.02')) %>% # MDL based off mg/L
+  mutate(TDN_mg_L = replace(TDN_mg_L, TDN_mg_L<0.008, '<0.008')) %>% # MDL based off mg/L
+  mutate(DOP_umol_L = replace(DOP_umol_L, DOP_umol_L<0.0008, '<0.0008'))
+#view(WC17.Q)
+
+## ---------------------------
+# 2. Add in columns for data no longer collected 
+WC17.Q$TN <- NaN
+WC17.Q$PN <- NaN
+WC17.Q$TP <- NaN
+WC17.Q$PP <- NaN
+WC17.Q$d18O <- NaN
+WC17.Q$d18O_sdev <- NaN
+WC17.Q$dDeut <- NaN
+WC17.Q$dD_sdev <- NaN
+WC17.Q$D_excess <- NaN
+WC17.Q$Trit <- NaN
+WC17.Q$T_sdev <- NaN
+WC17.Q$TOC <- NaN
+WC17.Q$POC <- NaN
+WC17.Q$comments <- NaN
+
+WC17.Q1 <- subset(WC17.Q, select=c(LTER_site, local_site, location, depth, year, date1,
+                                   time, pH, COND_uS_cm, ANC_uEQ_L, H_uEQ_L, NH4_uEQ_L,
+                                   Ca_uEQ, Mg_uEQ_L, Na_uEQ_L, K_uEQ_L, Cl_uEQ_L, NO3_uEQ_L,
+                                   SO4_uEQ_L, PO4_uEQ_L, Si_umol_L, cat_sum, an_sum, chg_bal,
+                                   TN, TDN_umol_L, PN, DON_umol_L, IN_umol_L, TP, TDP_umol_L, 
+                                   PP, DOP_umol_L, IP_umol_L, d18O, d18O_sdev, dDeut, dD_sdev,
+                                   D_excess, Trit, T_sdev, TOC, DOC_mg_L, POC, comments))
+
+# Change names
+colnames(WC17.Q1)[6] = "date"
+colnames(WC17.Q1)[9] = "conduct"
+colnames(WC17.Q1)[10] = "ANC"
+colnames(WC17.Q1)[11] = "H.plus."
+colnames(WC17.Q1)[12] = "NH4.plus."
+colnames(WC17.Q1)[13] = "Ca.plus..plus."
+colnames(WC17.Q1)[14] = "Mg.plus..plus."
+colnames(WC17.Q1)[15] = "Na.plus."
+colnames(WC17.Q1)[16] = "K.plus."
+colnames(WC17.Q1)[17] = "Cl.hyphen."
+colnames(WC17.Q1)[18] = "NO3.hyphen."
+colnames(WC17.Q1)[19] = "SO4.hyphen..hyphen."
+colnames(WC17.Q1)[20] = "PO4.hyphen..hyphen..hyphen."
+colnames(WC17.Q1)[21] = "Si" 
+colnames(WC17.Q1)[26] = "TDN"
+colnames(WC17.Q1)[28] = "DON"
+colnames(WC17.Q1)[29] = "IN"
+colnames(WC17.Q1)[31] = "TDP"
+colnames(WC17.Q1)[33] = "DOP"
+colnames(WC17.Q1)[34] = "IP"
+colnames(WC17.Q1)[43] = "DOC"
+
+# write.csv(WC17.Q1, paste0(outputDir, "Summer2017_GLVWaterChem.csv")) # complied data file of all DO sensors along buoy line
+
+## ---------------------------
+# IV. Fix 2017 data which was also missing 
+# Merge new data with the old:
+WCtest2 <- rbind(WCtest, WC17.Q1)
+summary(WCtest2)
+
+WCtest.plot2 <- ggplot(WCtest2) +
+  geom_point(aes( x=date , y= (pH)), color=(alpha(c("#457840"), 0.65))) +
+  theme_classic() +
+  facet_wrap(~year) 
+
+# write.csv(WCtest, paste0(outputDir, "ALL_GLVWaterChem.csv")) # complied data file of all DO sensors along buoy line
+
+# found some unflagged values in 2016 so fixing that too
+WC16 <- subset(dt1, year==2016)
+summary(WC16)
+names(WC16)
+
+WC16.Q=WC16 %>% 
+  mutate(NH4.plus. = replace(NH4.plus., NH4.plus.<0.50, '<0.50')) %>% 
+  mutate(NO3.hyphen. = replace(NO3.hyphen., NO3.hyphen.<0.008, '<0.008')) %>% #mg/L
+  mutate(TDN = replace(TDN, TDN<0.20, '<0.02')) %>% #mg/L
+  mutate(PO4.hyphen..hyphen..hyphen. = replace(PO4.hyphen..hyphen..hyphen., PO4.hyphen..hyphen..hyphen.<0.08, '<0.08')) %>%
+  mutate(DOP = replace(DOP, DOP<0.0008, '<0.0008')) %>% #DOP in mg P/L 
+  mutate(IN = replace(IN, IN<0.53, '<0.53')) %>% 
+  mutate(TDP = replace(TDP, TDP<0.04, '<0.04')) %>%
+  mutate(IP = replace(IP, IP<0.03, '<0.03')) %>%
+  mutate(DOP = replace(DOP, DOP<0.0008, '<0.0008'))
+
+WC16.Q%>%select(date, location, depth)%>%duplicated()%>%sum() # 6 dups
+
+View(WC16.Q%>%
+       inner_join(
+         WC16.Q %>%
+           group_by(date, location, depth) %>%
+           summarize(ct=dplyr::n())%>% filter(ct>1)))
+
+# Remove values:
+WC16.Q2 = WC16.Q %>%
+  distinct(date, location, depth, .keep_all = TRUE)
+
+WC16.Q2%>%select(date, location, depth)%>%duplicated()%>%sum() 
+
+# write.csv(WC16, paste0(outputDir, "Summer2016WaterChem_ISSUE.csv")) # complied data file of all DO sensors along buoy line
+# write.csv(WC16.Q2, paste0(outputDir, "Summer2016WaterChem.csv")) # complied data file of all DO sensors along buoy line
+
+
+# Take 2 on 2016 QAQC ~~~ not great.
+WC16T <- read.csv(paste0(inputDir, "/WaterChem/16dmgl4.csv"))
+summary(WC16T) # need to combine 1st 2 rows into 1 header 
+
+WC16T$date1 <- as.Date.character(WC16T$date, format="%m/%d/%y")
+range(WC16T$date1)
+
+WC16T.Q=WC16T %>% 
+  mutate(NH4_uEQ_L = replace(NH4_uEQ_L, NH4_uEQ_L<0.50, '<0.50')) %>% 
+  mutate(PO4_mg_L = replace(PO4_mg_L, PO4_mg_L<0.0004, '<0.0004')) %>%
+  mutate(PO4_uEQ_L = replace(PO4_uEQ_L, PO4_uEQ_L<0.08, '<0.08')) %>%
+  mutate(TDP_mg_L = replace(TDP_mg_L, TDP_mg_L<0.008, '<0.008'))  %>%
+  mutate(IN_umol_L = replace(IN_umol_L, IN_umol_L<0.53, '<0.53')) %>%
+  mutate(TDP_umol_L = replace(TDP_umol_L, TDP_umol_L<0.04, '<0.04')) %>%
+  mutate(IP_umol_L = replace(IP_umol_L, IP_umol_L<0.03, '<0.03'))  %>%
+  mutate(NO3_mg_L = replace(NO3_mg_L, NO3_mg_L<0.02, '<0.02')) %>% # MDL based off mg/L
+  mutate(TDN_mg_L = replace(TDN_mg_L, TDN_mg_L<0.008, '<0.008')) %>% # MDL based off mg/L
+  mutate(DOP_umol_L = replace(DOP_umol_L, DOP_umol_L<0.04, '<0.04'))
+
+# 2. Add in columns for data no longer collected 
+WC16T.Q$TN <- NaN
+WC16T.Q$PN <- NaN
+WC16T.Q$TP <- NaN
+WC16T.Q$PP <- NaN
+WC16T.Q$d18O <- NaN
+WC16T.Q$d18O_sdev <- NaN
+WC16T.Q$dDeut <- NaN
+WC16T.Q$dD_sdev <- NaN
+WC16T.Q$D_excess <- NaN
+WC16T.Q$Trit <- NaN
+WC16T.Q$T_sdev <- NaN
+WC16T.Q$TOC <- NaN
+WC16T.Q$POC <- NaN
+WC16T.Q$comments <- NaN
+
+WC16T.Q1 <- subset(WC16T.Q, select=c(LTER_site, local_site, depth, date1,
+                                   time, pH, COND_uS_cm, ANC_uEQ_L, H_uEQ_L, NH4_uEQ_L,
+                                   Ca_uEQ, Mg_uEQ_L, Na_uEQ_L, K_uEQ_L, Cl_uEQ_L, NO3_uEQ_L,
+                                   SO4_uEQ_L, PO4_uEQ_L, Si_umol_L, cat_sum, an_sum, chg_bal,
+                                   TN, TDN_umol_L, PN, DON_umol_L, IN_umol_L, TP, TDP_umol_L, 
+                                   PP, DOP_umol_L, IP_umol_L, d18O, d18O_sdev, dDeut, dD_sdev,
+                                   D_excess, Trit, T_sdev, TOC, DOC_mg_L, POC, comments))
+
+# Change names
+colnames(WC17.Q1)[6] = "date"
+colnames(WC17.Q1)[9] = "conduct"
+colnames(WC17.Q1)[10] = "ANC"
+colnames(WC17.Q1)[11] = "H.plus."
+colnames(WC17.Q1)[12] = "NH4.plus."
+colnames(WC17.Q1)[13] = "Ca.plus..plus."
+colnames(WC17.Q1)[14] = "Mg.plus..plus."
+colnames(WC17.Q1)[15] = "Na.plus."
+colnames(WC17.Q1)[16] = "K.plus."
+colnames(WC17.Q1)[17] = "Cl.hyphen."
+colnames(WC17.Q1)[18] = "NO3.hyphen."
+colnames(WC17.Q1)[19] = "SO4.hyphen..hyphen."
+colnames(WC17.Q1)[20] = "PO4.hyphen..hyphen..hyphen."
+colnames(WC17.Q1)[21] = "Si" 
+colnames(WC17.Q1)[26] = "TDN"
+colnames(WC17.Q1)[28] = "DON"
+colnames(WC17.Q1)[29] = "IN"
+colnames(WC17.Q1)[31] = "TDP"
+colnames(WC17.Q1)[33] = "DOP"
+colnames(WC17.Q1)[34] = "IP"
+colnames(WC17.Q1)[43] = "DOC"
+
+
+
+
+
+
+
